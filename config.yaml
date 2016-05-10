@@ -26,5 +26,5 @@ menu:
       weight: 2
 
 params:
-  logo: "asd.png"
+  logo: "/media/devcows-logo.png"
   subtitle: "Everything as Code"
