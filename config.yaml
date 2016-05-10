@@ -6,6 +6,7 @@ theme: "beautifulhugo"
 MetaDataFormat: "yaml"
 copyright: "Copyright (c) 2015 - 2016, DevCows; all rights reserved."
 pygmentsUseClasses: true
+PygmentsCodeFences: true
 
 author:
   name: "DevCows"
