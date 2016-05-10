@@ -1,0 +1,29 @@
+---
+baseurl: "http://devcows.com/"
+languageCode: "en-us"
+title: "DevCows"
+theme: "beautifulhugo"
+MetaDataFormat: "yaml"
+copyright: "Copyright (c) 2015 - 2016, DevCows; all rights reserved."
+pygmentsUseClasses: true
+
+author:
+  name: "DevCows"
+  email: "hello@devcows.com"
+  github: "devcows"
+
+permalinks:
+  post: /:year/:month/:title/
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "Blog"
+      url: "/post"
+      weight: 2
+
+params:
+  logo: "asd.png"
+  subtitle: "Everything as Code"
