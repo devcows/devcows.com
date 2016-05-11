@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://devcows.com/</loc>
+    <loc>http://devcows.github.io/devcows.com/</loc>
     <lastmod>2016-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://devcows.com/blog/2016/01/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</loc>
+    <loc>http://devcows.github.io/devcows.com/blog/2016/01/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</loc>
     <lastmod>2016-01-26T00:00:00+00:00</lastmod>
   </url>
   

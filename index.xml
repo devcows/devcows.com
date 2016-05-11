@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DevCows</title>
-    <link>http://devcows.com/</link>
+    <link>http://devcows.github.io/devcows.com/</link>
     <description>Recent content on DevCows</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,19 +10,19 @@
     <webMaster>hello@devcows.com (DevCows)</webMaster>
     <copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright>
     <lastBuildDate>Tue, 26 Jan 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://devcows.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://devcows.github.io/devcows.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs</title>
-      <link>http://devcows.com/blog/2016/01/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</link>
+      <link>http://devcows.github.io/devcows.com/blog/2016/01/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</link>
       <pubDate>Tue, 26 Jan 2016 00:00:00 +0000</pubDate>
       <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.com/blog/2016/01/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</guid>
+      <guid>http://devcows.github.io/devcows.com/blog/2016/01/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</guid>
       <description>&lt;p&gt;In this post we are going to create an IPsec VPN tunnel between two remote sites using Mikrotik routers with dynamic public IPs . By default, Mikrotik does not allow to use FQDN (domain names) to setup an IPsec tunnel, so we are going to create some scripts to update the IPsec configuration whenever the local or remote IPs change.&lt;/p&gt;
 
 &lt;p&gt;The network layout is as follows:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://devcows.com/media/mikrotik-ipsec-1.png&#34; alt=&#34;IPsec tunnel&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devcows.github.io/devcows.com/media/mikrotik-ipsec-1.png&#34; alt=&#34;IPsec tunnel&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The first thing to take into account is that LAN addresses must be different between Site 1 and Site 2. In our example, Site 1 uses LAN 192.168.1.0/24, whereas Site 2 uses 192.168.2.0/24. You can replace these networks with the ones in your infrastructure.&lt;/p&gt;
 
@@ -65,7 +65,7 @@
 
 &lt;p&gt;It may be more convenient to create the script from the UI, whether it is the web UI or Winbox. Enable “read”, “write”, and “test” policies, paste the script in the source field and replace the variables within the “Script Settings” section with your information. If you have followed the guide, leave the “IPsecComment” variable as it is. Replace the “WANInter” with the WAN interface that has the public IP of Site 1.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://devcows.com/media/mikrotik-ipsec-2.png&#34; alt=&#34;IPsec tunnel&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devcows.github.io/devcows.com/media/mikrotik-ipsec-2.png&#34; alt=&#34;IPsec tunnel&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can run the script manually and check the logs to verify whether the No-IP host and the IPsec policy are updated successfully.&lt;/p&gt;
 
@@ -83,7 +83,7 @@
 
 &lt;p&gt;Again, create a script from the UI and replace “RemoteNOIPHost” with the host name of Site 2.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://devcows.com/media/mikrotik-ipsec-3.png&#34; alt=&#34;IPsec tunnel&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devcows.github.io/devcows.com/media/mikrotik-ipsec-3.png&#34; alt=&#34;IPsec tunnel&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can run the script manually and check the logs to verify that the IPsec peer and policy are updated successfully. For testing purposes, you can manually modify the IP from the No-IP control panel and verify that the script updates the IPsec configuration with the new IP.&lt;/p&gt;
 
