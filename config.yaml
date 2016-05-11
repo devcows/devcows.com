@@ -1,5 +1,5 @@
 ---
-baseurl: "http://devcows.com/"
+baseurl: "http://devcows.github.io/devcows.com/"
 languageCode: "en-us"
 title: "DevCows"
 theme: "beautifulhugo"
