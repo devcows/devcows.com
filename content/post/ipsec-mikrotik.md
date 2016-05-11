@@ -13,7 +13,7 @@ In this post we are going to create an IPsec VPN tunnel between two remote sites
 
 The network layout is as follows:
 
-![IPsec tunnel](/media/mikrotik-ipsec-1.png)
+![IPsec tunnel]({{ .Site.BaseURL }}/media/mikrotik-ipsec-1.png)
 
 The first thing to take into account is that LAN addresses must be different between Site 1 and Site 2. In our example, Site 1 uses LAN 192.168.1.0/24, whereas Site 2 uses 192.168.2.0/24. You can replace these networks with the ones in your infrastructure.
 
@@ -61,7 +61,7 @@ The script source is located here: https://gist.github.com/adrianmo/e54fbcd2c9d3
 
 It may be more convenient to create the script from the UI, whether it is the web UI or Winbox. Enable “read”, “write”, and “test” policies, paste the script in the source field and replace the variables within the “Script Settings” section with your information. If you have followed the guide, leave the “IPsecComment” variable as it is. Replace the “WANInter” with the WAN interface that has the public IP of Site 1.
 
-![IPsec tunnel](/media/mikrotik-ipsec-2.png)
+![IPsec tunnel]({{ .Site.BaseURL }}/media/mikrotik-ipsec-2.png)
 
 You can run the script manually and check the logs to verify whether the No-IP host and the IPsec policy are updated successfully.
 
@@ -81,7 +81,7 @@ The script to update the IPsec peer and policy when Site 2 public IP changes can
 
 Again, create a script from the UI and replace “RemoteNOIPHost” with the host name of Site 2.
 
-![IPsec tunnel](/media/mikrotik-ipsec-3.png)
+![IPsec tunnel]({{ .Site.BaseURL }}/media/mikrotik-ipsec-3.png)
 
 You can run the script manually and check the logs to verify that the IPsec peer and policy are updated successfully. For testing purposes, you can manually modify the IP from the No-IP control panel and verify that the script updates the IPsec configuration with the new IP.
 
