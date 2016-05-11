@@ -19,5 +19,5 @@ before_script:
 script:
   - hugo
 
-deploy:
+after_success:
   - bash ./deploy.sh
