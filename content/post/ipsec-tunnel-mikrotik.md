@@ -1,6 +1,5 @@
 ---
 title: "Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs"
-description: "spf13-vim is a cross platform distribution of vim plugins and resources for Vim."
 slug: "create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips"
 date: "2016-01-26"
 tags:
