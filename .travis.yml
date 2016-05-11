@@ -19,4 +19,5 @@ before_script:
 script:
   - hugo
 
-deploy: bash ./deploy.sh
+deploy:
+  - bash ./deploy.sh
