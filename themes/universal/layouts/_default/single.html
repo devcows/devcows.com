@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    {{ partial "nav.html" . }}
+
+    <div role="main" class="container main-content">
+
+      {{ if eq .Type "post" }}
+        {{ partial "post.html" . }}
+      {{ else if eq .Type "page" }}
+        {{ partial "page.html" . }}
+      {{ else }}
+        NO MATCHING PARTIAL
+      {{ end }}
+
+      {{ if .Site.DisqusShortname }}
+      <div class="row disqus-comments">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          {{ template "_internal/disqus.html" . }}
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+
+    {{ partial "footer.html" . }}
+
+  </body>
+</html>
