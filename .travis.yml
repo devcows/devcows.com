@@ -14,7 +14,7 @@ install:
 
 before_script:
   - mkdir themes
-  - git clone --depth 1 https://github.com/halogenica/beautifulhugo themes/beautifulhugo/
+  - git clone --depth 1 https://github.com/devcows/hugo-universal-theme.git themes/universal/
 
 script:
   - hugo

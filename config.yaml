@@ -2,11 +2,12 @@
 baseurl: "http://devcows.github.io/devcows.com/"
 languageCode: "en-us"
 title: "DevCows"
-theme: "beautifulhugo"
+theme: "universal"
 MetaDataFormat: "yaml"
 copyright: "Copyright (c) 2015 - 2016, DevCows; all rights reserved."
 pygmentsUseClasses: true
 PygmentsCodeFences: true
+Paginate: 10
 
 author:
   name: "DevCows"

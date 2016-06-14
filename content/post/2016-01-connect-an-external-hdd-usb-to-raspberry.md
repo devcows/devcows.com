@@ -6,6 +6,7 @@ tags:
   - "hdd usb"
   - "raspberry pi"
 author: "GUILLERMO"
+image: "media/raspberry-pi.png"
 ---
 
 In `Raspberry Pi B` model by default is limiting the output amperage. We can trick this behavior editing the config file:

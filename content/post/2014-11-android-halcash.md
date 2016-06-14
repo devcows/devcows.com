@@ -6,6 +6,7 @@ tags:
   - "android"
   - "google maps"
 author: "GUILLERMO"
+image: "media/hal-cash.png"
 ---
 
 Hal-cash finder searches terminal banks compatibles with [Hal-cash](http://www.halcash.com/es) method using Hal-cash API and render in Google Maps.

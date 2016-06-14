@@ -8,6 +8,7 @@ tags:
   - "temperature"
   - "humidity"
 author: "GUILLERMO"
+image: "media/meteodino.png"
 ---
 
 A monitoring system for temperature and humidity. The system is composed by a gadget with sensors and a server to store the data. This project combines [Ruby on rails](http://en.wikipedia.org/wiki/Ruby_on_Rails), [AngularJS](http://en.wikipedia.org/wiki/AngularJS), [Coffescript](http://coffeescript.org) and [Arduino](http://en.wikipedia.org/wiki/Arduino).
@@ -20,11 +21,11 @@ A monitoring system for temperature and humidity. The system is composed by a ga
 
 	<div class="carousel-inner">
 		<div class="item active">
-      {{% img class="img-responsive center-block" src="media/content_meteodino_1.jpg" alt="Meteodino1" baseurl="true" style="height: 400px;" %}}			
+      {{% img class="img-responsive center-block" src="media/meteodino1.jpg" alt="Meteodino1" baseurl="true" style="height: 400px;" %}}			
 		</div>
 
 		<div class="item">
-      {{% img class="img-responsive center-block" src="media/content_meteodino_2.png" alt="Meteodino2" baseurl="true" style="height: 400px;" %}}			
+      {{% img class="img-responsive center-block" src="media/meteodino2.png" alt="Meteodino2" baseurl="true" style="height: 400px;" %}}			
 		</div>
 	</div>
 	<a class="left carousel-control" data-slide="prev" href="#myCarousel" role="button"><span class="sr-only">Previous</span> </a> <a class="right carousel-control" data-slide="next" href="#myCarousel" role="button"> <span class="sr-only">Next</span> </a>

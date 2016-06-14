@@ -7,6 +7,7 @@ tags:
   - "arduino"
   - "xbmc"
 author: "GUILLERMO"
+image: "media/ambilight.jpg"
 ---
 
 Homemade ambilight system for TV displays with Arduino and Xbmc.
@@ -23,19 +24,19 @@ Homemade ambilight system for TV displays with Arduino and Xbmc.
 
 	<div class="carousel-inner">
 		<div class="item active">
-      {{% img class="img-responsive center-block" src="media/content_ambilight1.png" alt="Ambilight1" baseurl="true" style="height: 400px;" %}}
+      {{% img class="img-responsive center-block" src="media/ambilight1.png" alt="Ambilight1" baseurl="true" style="height: 400px;" %}}
 		</div>
 
 		<div class="item">
-      {{% img class="img-responsive center-block" src="media/content_ambilight2.png" alt="Ambilight2" baseurl="true" style="height: 400px;" %}}
+      {{% img class="img-responsive center-block" src="media/ambilight2.png" alt="Ambilight2" baseurl="true" style="height: 400px;" %}}
 		</div>
 
 		<div class="item">
-      {{% img class="img-responsive center-block" src="media/content_ambilight3.png" alt="Ambilight3" baseurl="true" style="height: 400px;" %}}
+      {{% img class="img-responsive center-block" src="media/ambilight3.png" alt="Ambilight3" baseurl="true" style="height: 400px;" %}}
 		</div>
 
 		<div class="item">
-      {{% img class="img-responsive center-block" src="media/content_ambilight4.png" alt="Ambilight4" baseurl="true" style="height: 400px;" %}}
+      {{% img class="img-responsive center-block" src="media/ambilight4.png" alt="Ambilight4" baseurl="true" style="height: 400px;" %}}
 		</div>
 	</div>
 	<a class="left carousel-control" data-slide="prev" href="#myCarousel" role="button"><span class="sr-only">Previous</span> </a>
@@ -44,13 +45,11 @@ Homemade ambilight system for TV displays with Arduino and Xbmc.
 
 ## Demos
 
-<p>
-	<iframe frameborder="0" height="450" id="ytplayer" src="http://www.youtube.com/embed/QiZHNcrvsQw" type="text/html" width="100%"></iframe>
-</p>
+Video 1:
+<iframe frameborder="0" height="450" id="ytplayer" src="http://www.youtube.com/embed/QiZHNcrvsQw" type="text/html" width="100%"></iframe>
 
-<p>
-	<iframe frameborder="0" height="450" id="ytplayer" src="http://www.youtube.com/embed/eNhAsUhEIEE" type="text/html" width="100%"></iframe>
-</p>
+Video 2:
+<iframe frameborder="0" height="450" id="ytplayer" src="http://www.youtube.com/embed/eNhAsUhEIEE" type="text/html" width="100%"></iframe>
 
 ## Components
 
