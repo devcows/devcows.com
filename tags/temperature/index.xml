@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Temperature on DevCows</title>
+    <link>http://devcows.github.io/devcows.com/tags/temperature/</link>
+    <description>Recent content in Temperature on DevCows</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>hello@devcows.com (DevCows)</managingEditor>
+    <webMaster>hello@devcows.com (DevCows)</webMaster>
+    <copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 31 Dec 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://devcows.github.io/devcows.com/tags/temperature/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Meteodino monitoring temperature system</title>
+      <link>http://devcows.github.io/devcows.com/blog/2014/12/meteodino-monitoring-temperature-system/</link>
+      <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
+      <author>hello@devcows.com (DevCows)</author>
+      <guid>http://devcows.github.io/devcows.com/blog/2014/12/meteodino-monitoring-temperature-system/</guid>
+      <description>
+
+&lt;p&gt;A monitoring system for temperature and humidity. The system is composed by a gadget with sensors and a server to store the data. This project combines &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_on_Rails&#34;&gt;Ruby on rails&lt;/a&gt;, &lt;a href=&#34;http://en.wikipedia.org/wiki/AngularJS&#34;&gt;AngularJS&lt;/a&gt;, &lt;a href=&#34;http://coffeescript.org&#34;&gt;Coffescript&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Arduino&#34;&gt;Arduino&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;carousel slide&#34; id=&#34;myCarousel&#34;&gt;
+    &lt;ol class=&#34;carousel-indicators&#34;&gt;
+        &lt;li class=&#34;active&#34; data-slide-to=&#34;0&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
+        &lt;li data-slide-to=&#34;1&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;div class=&#34;carousel-inner&#34;&gt;
+        &lt;div class=&#34;item active&#34;&gt;
+      
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_meteodino_1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+           
+        &lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
+  
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_meteodino_2.png&#34; alt=&#34;Meteodino2&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+           
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;a class=&amp;quot;left carousel-control&amp;quot; data-slide=&amp;quot;prev&amp;quot; href=&amp;quot;#myCarousel&amp;quot; role=&amp;quot;button&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;sr-only&amp;quot;&amp;gt;Previous&amp;lt;/span&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a class=&amp;quot;right carousel-control&amp;quot; data-slide=&amp;quot;next&amp;quot; href=&amp;quot;#myCarousel&amp;quot; role=&amp;quot;button&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;sr-only&amp;quot;&amp;gt;Next&amp;lt;/span&amp;gt; &amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;## Description&lt;/p&gt;
+
+&lt;p&gt;## Server&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;API REST.&lt;/li&gt;
+&lt;li&gt;Frontend with &lt;a href=&#34;http://en.wikipedia.org/wiki/AngularJS&#34;&gt;AngularJS&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;temperature-gadget-arduino&#34;&gt;Temperature gadget =&amp;gt; Arduino&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Arduino Uno: &lt;a href=&#34;http://www.dx.com/p/uno-r3-atmega328p-uno-r3-development-board-deep-blue-285620#.VMk3V17F9TA&#34;&gt;Link Dx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Arduino Ethernet Shield: &lt;a href=&#34;http://www.dx.com/p/ethernet-shield-v1-1-for-arduino-66908#.VMk3Tl7F9TA&#34;&gt;Link Dx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Temperature sensor (DHT-11): &lt;a href=&#34;http://www.dx.com/p/arduino-digital-temperature-humidity-sensor-module-121350#.VMk3UV7F9TA&#34;&gt;Link Dx&lt;/a&gt; (Shit, very imprecise)&lt;/li&gt;
+&lt;li&gt;Temperature sensor (DHT-22): &lt;a href=&#34;http://www.dx.com/p/arduino-dht11-digital-temperature-humidity-sensor-138531&#34;&gt;Link Dx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LCD 16x2: &lt;a href=&#34;http://www.dx.com/p/16-x-2-character-lcd-display-module-with-blue-backlight-121356#.VMk3c17F9TA&#34;&gt;Link Dx&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;## Temperature gadget =&amp;gt; Raspberry pi (coming soon)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Raspberry pi&lt;/li&gt;
+&lt;li&gt;Temperature sensor (DHT-11): &lt;a href=&#34;http://www.dx.com/p/arduino-digital-temperature-humidity-sensor-module-121350#.VMk3UV7F9TA&#34;&gt;Link Dx&lt;/a&gt; (Shit, very imprecise)&lt;/li&gt;
+&lt;li&gt;Temperature sensor (DHT-22): &lt;a href=&#34;http://www.dx.com/p/arduino-dht11-digital-temperature-humidity-sensor-138531&#34;&gt;Link Dx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LCD 16x2: &lt;a href=&#34;http://www.dx.com/p/16-x-2-character-lcd-display-module-with-blue-backlight-121356#.VMk3c17F9TA&#34;&gt;Link Dx&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Demo at: &lt;a href=&#34;http://meteodino.guerreroibarra.com&#34;&gt;meteodino.guerreroibarra.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;## Remarks&lt;/p&gt;
+
+&lt;p&gt;The web page is developed with &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_on_Rails&#34;&gt;Ruby on Rails&lt;/a&gt; and &lt;a href=&#34;http://getbootstrap.com&#34;&gt;Bootstrap&lt;/a&gt;. The web uses some interesting gems, we will explain some:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://activeadmin.info&#34;&gt;Active Admin&lt;/a&gt; generates a complete backoffice for manage the web site.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yuki24/did_you_mean&#34;&gt;Did you mean&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ctran/annotate_models&#34;&gt;Annotate&lt;/a&gt; add a comment summarizing the current schema to the top or bottom of each of your models.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/voormedia/rails-erd&#34;&gt;Rails erd&lt;/a&gt; generates a class diagram.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bbatsov/rubocop&#34;&gt;Rubocop&lt;/a&gt; is a Ruby static code analyzer. Out of the box it will enforce many of the guidelines outlined in the community Ruby Style Guide.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://bitbucket.org/devcows/meteodino&#34;&gt;GO TO REPOSITORY&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

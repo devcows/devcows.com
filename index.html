@@ -12,7 +12,7 @@
   
   
 
-  <meta name="generator" content="Hugo 0.16-DEV" />
+  <meta name="generator" content="Hugo 0.17-DEV" />
 
   <link rel="alternate" href="http://devcows.github.io/index.xml" type="application/rss+xml" title="DevCows">
 
@@ -122,6 +122,60 @@
              </article>
             
             <article class="post-preview">
+              <a href="http://devcows.github.io/devcows.com/blog/2016/01/homemade-ambilight-with-arduino-and-xbmc/">
+          	  <h2 class="post-title">Homemade ambilight with Arduino and Xbmc</h2>
+          	
+          	    
+              </a>
+
+              <p class="post-meta">
+                Posted on January 15, 2016
+              </p>
+            
+              <div class="post-entry">
+                Homemade ambilight system for TV displays with Arduino and Xbmc. ## Images &lt;div class=&quot;item&quot;&gt; &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;/div&gt; &lt;/div&gt; &lt;a class=&quot;left carousel-control&quot; data-slide=&quot;prev&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt; &lt;/a&gt; Next Demos Components 50 LEDS =&gt; 2 x [12mm Diffused Thin Digital RGB LED Pixels (Strand of 25) - WS2801]: Link Ebay Arduino uno: Link Dx Male + Female DC Power Converter Connector Adapters (Optional to connect leds): Link Dx
+          	  <a href="http://devcows.github.io/devcows.com/blog/2016/01/homemade-ambilight-with-arduino-and-xbmc/" class="post-read-more">[Read&nbsp;More]</a>
+              </div>
+            
+             </article>
+            
+            <article class="post-preview">
+              <a href="http://devcows.github.io/devcows.com/blog/2016/01/be-sync-with-raspberry-pi/">
+          	  <h2 class="post-title">Be sync with Raspberry Pi</h2>
+          	
+          	    
+              </a>
+
+              <p class="post-meta">
+                Posted on January 6, 2016
+              </p>
+            
+              <div class="post-entry">
+                Is very common have the necessity to sync some kind of information with other computers or have a synchronize backup. In this post we explain how to install Btsync into the Raspberry PI. Download mkdir .btsync cd .btsync wget https://download-cdn.getsyncapp.com/stable/linux-arm/BitTorrent-Sync_arm.tar.gz tar -xvf BitTorrent-Sync_arm.tar.gz rm BitTorrent-Sync_arm.tar.gz ln -s /lib/arm-linux-gnueabihf/ld-linux.so.3 /lib/ld-linux.so.3 Configure cd ~/.btsync ./btsync --dump-sample-config &gt; btsync.conf # browse the sample config file and change what you want Start at boot nano /etc/init.d/btsync Paste the following code in the script: #!
+          	  <a href="http://devcows.github.io/devcows.com/blog/2016/01/be-sync-with-raspberry-pi/" class="post-read-more">[Read&nbsp;More]</a>
+              </div>
+            
+             </article>
+            
+            <article class="post-preview">
+              <a href="http://devcows.github.io/devcows.com/blog/2016/01/connect-an-external-hdd-usb-to-raspberry-pi/">
+          	  <h2 class="post-title">CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI</h2>
+          	
+          	    
+              </a>
+
+              <p class="post-meta">
+                Posted on January 6, 2016
+              </p>
+            
+              <div class="post-entry">
+                In Raspberry Pi B model by default is limiting the output amperage. We can trick this behavior editing the config file: vi /boot/config.txt Add the following lines: safe_mode_gpio=4 max_usb_current=1 Reboot the raspberry and now you can plug the HDD in the usb port.
+          	  <a href="http://devcows.github.io/devcows.com/blog/2016/01/connect-an-external-hdd-usb-to-raspberry-pi/" class="post-read-more">[Read&nbsp;More]</a>
+              </div>
+            
+             </article>
+            
+            <article class="post-preview">
               <a href="http://devcows.github.io/devcows.com/blog/2015/06/update-deluge-version-on-your-raspberry-pi/">
           	  <h2 class="post-title">Update Deluge version on your Raspberry PI</h2>
           	
@@ -135,6 +189,60 @@
               <div class="post-entry">
                 Unfortunately, at the time of writing this post the latest version available from Raspbian repositories is 1.3.3. And you may not use other repositories since they will probably not provide packages for ARM devices such as the Raspberry PI. There are different reasons for updating Deluge to the latest version. One of them is that 1.3.3 does not support Magnet links, which is a very common way of loading in torrents to the client.
           	  <a href="http://devcows.github.io/devcows.com/blog/2015/06/update-deluge-version-on-your-raspberry-pi/" class="post-read-more">[Read&nbsp;More]</a>
+              </div>
+            
+             </article>
+            
+            <article class="post-preview">
+              <a href="http://devcows.github.io/devcows.com/blog/2014/12/meteodino-monitoring-temperature-system/">
+          	  <h2 class="post-title">Meteodino monitoring temperature system</h2>
+          	
+          	    
+              </a>
+
+              <p class="post-meta">
+                Posted on December 31, 2014
+              </p>
+            
+              <div class="post-entry">
+                A monitoring system for temperature and humidity. The system is composed by a gadget with sensors and a server to store the data. This project combines Ruby on rails, AngularJS, Coffescript and Arduino. &lt;div class=&quot;item&quot;&gt; &lt;/div&gt; &lt;/div&gt; &lt;a class=&quot;left carousel-control&quot; data-slide=&quot;prev&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt; &lt;/a&gt; &lt;a class=&quot;right carousel-control&quot; data-slide=&quot;next&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot;&gt; &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt; &lt;/a&gt; ## Description ## Server API REST. Frontend with AngularJS. Temperature gadget =&gt; Arduino Arduino Uno: Link Dx Arduino Ethernet Shield: Link Dx Temperature sensor (DHT-11): Link Dx (Shit, very imprecise) Temperature sensor (DHT-22): Link Dx LCD 16x2: Link Dx ## Temperature gadget =&gt; Raspberry pi (coming soon) Raspberry pi Temperature sensor (DHT-11): Link Dx (Shit, very imprecise) Temperature sensor (DHT-22): Link Dx LCD 16x2: Link Dx Demo at: meteodino.guerreroibarra.com ## Remarks The web page is developed with Ruby on Rails and Bootstrap.
+          	  <a href="http://devcows.github.io/devcows.com/blog/2014/12/meteodino-monitoring-temperature-system/" class="post-read-more">[Read&nbsp;More]</a>
+              </div>
+            
+             </article>
+            
+            <article class="post-preview">
+              <a href="http://devcows.github.io/devcows.com/blog/2014/11/hal-cash-finder-android/">
+          	  <h2 class="post-title">Hal-cash finder (Android)</h2>
+          	
+          	    
+              </a>
+
+              <p class="post-meta">
+                Posted on November 29, 2014
+              </p>
+            
+              <div class="post-entry">
+                Hal-cash finder searches terminal banks compatibles with Hal-cash method using Hal-cash API and render in Google Maps. &lt;div class=&quot;item&quot;&gt; &lt;img class=&quot;img-responsive center-block&quot; src=&quot;/ckeditor_assets/pictures/12/content_picture_2.png&quot; style=&quot;height: 400px;&quot;&gt; &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;img class=&quot;img-responsive center-block&quot; src=&quot;/ckeditor_assets/pictures/14/content_picture_3.png&quot; style=&quot;height: 400px;&quot;&gt; &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;img class=&quot;img-responsive center-block&quot; src=&quot;/ckeditor_assets/pictures/13/content_picture_4.png&quot; style=&quot;height: 400px;&quot;&gt; &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;img class=&quot;img-responsive center-block&quot; src=&quot;/ckeditor_assets/pictures/11/content_picture_5.png&quot; style=&quot;height: 400px;&quot;&gt; &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;img class=&quot;img-responsive center-block&quot; src=&quot;/ckeditor_assets/pictures/10/content_picture_6.png&quot; style=&quot;height: 400px;&quot;&gt; &lt;/div&gt; &lt;/div&gt; &lt;a class=&quot;left carousel-control&quot; data-slide=&quot;prev&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt; &lt;/a&gt; &lt;a class=&quot;right carousel-control&quot; data-slide=&quot;next&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot;&gt; &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt; &lt;/a&gt; Description Hal-cash finder is an application that searches terminal banks compatibles with Hal-cash method nearest your position.
+          	  <a href="http://devcows.github.io/devcows.com/blog/2014/11/hal-cash-finder-android/" class="post-read-more">[Read&nbsp;More]</a>
+              </div>
+            
+             </article>
+            
+            <article class="post-preview">
+              <a href="http://devcows.github.io/devcows.com/blog/2014/11/manuncios-opensource-android/">
+          	  <h2 class="post-title">Manuncios opensource (Android)</h2>
+          	
+          	    
+              </a>
+
+              <p class="post-meta">
+                Posted on November 25, 2014
+              </p>
+            
+              <div class="post-entry">
+                Manuncios is a native android application that finds offers in Milanuncios.com web page. &lt;div class=&quot;item&quot;&gt; &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;/div&gt; &lt;/div&gt; &lt;a class=&quot;left carousel-control&quot; data-slide=&quot;prev&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt; &lt;/a&gt; Next Description In the application, you can do: Search: you can search offers with different criteria as title, price or location. Order: the offers can order by price or age. Show: click in the offer to see more in detail.
+          	  <a href="http://devcows.github.io/devcows.com/blog/2014/11/manuncios-opensource-android/" class="post-read-more">[Read&nbsp;More]</a>
               </div>
             
              </article>

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>404 Page not found</title>
+  <title>Be sync with Raspberry Pi</title>
 
   <meta name="author" content="DevCows" />
   
@@ -24,9 +24,9 @@
   <link rel="stylesheet" href="http://devcows.github.io/devcows.com/css/pygment_highlights.css" />
   
   
-  <meta property="og:title" content="404 Page not found" />
+  <meta property="og:title" content="Be sync with Raspberry Pi" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="404.html/" />
+  <meta property="og:url" content="/" />
   <meta property="og:image" content="/media/devcows-logo.png" />
   
 </head>
@@ -78,17 +78,124 @@
 </nav>
 
 
-      <div role="main" class="container main-content">
-  
-  	    <div class="text-center">
-    	      <h1>Whoops, this page doesn't exist.</h1>
-    	      <h1>Move along. (404 error)</h1>
-    	      <br/>
-    
-	      <img src="http://devcows.github.io/devcows.com//img/404-southpark.jpg" />
-	    </div>
-	  
-	  </div>
+    <div role="main" class="container main-content">
+
+      
+        
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>Be sync with Raspberry Pi</h1>
+      
+      
+      
+      <span class="post-meta">Posted on January 6, 2016</span>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+          
+
+<p>Is very common have the necessity to sync some kind of information with other computers or have a synchronize backup. In this post we explain how to install <a href="https://getsync.com">Btsync</a> into the Raspberry PI.</p>
+
+<h2 id="download">Download</h2>
+
+<pre><code>mkdir .btsync
+cd .btsync
+wget https://download-cdn.getsyncapp.com/stable/linux-arm/BitTorrent-Sync_arm.tar.gz
+tar -xvf BitTorrent-Sync_arm.tar.gz
+rm BitTorrent-Sync_arm.tar.gz
+
+ln -s /lib/arm-linux-gnueabihf/ld-linux.so.3 /lib/ld-linux.so.3
+</code></pre>
+
+<h2 id="configure">Configure</h2>
+
+<pre><code>cd ~/.btsync
+./btsync --dump-sample-config &gt; btsync.conf
+# browse the sample config file and change what you want
+</code></pre>
+
+<h2 id="start-at-boot">Start at boot</h2>
+
+<pre><code>nano /etc/init.d/btsync
+</code></pre>
+
+<p>Paste the following code in the script:</p>
+
+<pre><code>#! /bin/sh
+# /etc/init.d/btsync
+#
+
+# Carry out specific functions when asked to by the system
+case &quot;$1&quot; in
+start)
+    /home/osmc/.btsync/btsync --config /home/osmc/.btsync/btsync.conf
+    ;;
+stop)
+    killall btsync
+    ;;
+*)
+    echo &quot;Usage: /etc/init.d/btsync {start|stop}&quot;
+    exit 1
+    ;;
+esac
+
+exit 0
+</code></pre>
+
+<p>Then change the permissions, test, and register it to run at boot:</p>
+
+<pre><code>sudo chmod 755 /etc/init.d/btsync
+sudo /etc/init.d/btsync start       # test that the script starts
+sudo /etc/init.d/btsync stop        # test that the script stops
+sudo update-rc.d btsync defaults
+</code></pre>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="http://devcows.github.io/devcows.com/blog/2016/01/connect-an-external-hdd-usb-to-raspberry-pi/" data-toggle="tooltip" data-placement="top" title="CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI">&larr; Previous Post</a>
+        </li>
+        
+        
+        <li class="next">
+          <a href="http://devcows.github.io/devcows.com/blog/2016/01/homemade-ambilight-with-arduino-and-xbmc/" data-toggle="tooltip" data-placement="top" title="Homemade ambilight with Arduino and Xbmc">Next Post &rarr;</a>
+        </li>
+        
+      </ul>
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+
+    </div>
 
     <footer>
   <div class="container beautiful-jekyll-footer">

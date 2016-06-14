@@ -9,8 +9,29 @@
     <managingEditor>hello@devcows.com (DevCows)</managingEditor>
     <webMaster>hello@devcows.com (DevCows)</webMaster>
     <copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 15 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jan 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://devcows.github.io/devcows.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI</title>
+      <link>http://devcows.github.io/devcows.com/blog/2016/01/connect-an-external-hdd-usb-to-raspberry-pi/</link>
+      <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
+      <author>hello@devcows.com (DevCows)</author>
+      <guid>http://devcows.github.io/devcows.com/blog/2016/01/connect-an-external-hdd-usb-to-raspberry-pi/</guid>
+      <description>&lt;p&gt;In &lt;code&gt;Raspberry Pi B&lt;/code&gt; model by default is limiting the output amperage. We can trick this behavior editing the config file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vi /boot/config.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add the following lines:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;safe_mode_gpio=4
+max_usb_current=1   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Reboot the raspberry and now you can plug the HDD in the usb port.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Update Deluge version on your Raspberry PI</title>

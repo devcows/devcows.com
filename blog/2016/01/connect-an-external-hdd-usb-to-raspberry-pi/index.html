@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>404 Page not found</title>
+  <title>CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI</title>
 
   <meta name="author" content="DevCows" />
   
@@ -24,9 +24,9 @@
   <link rel="stylesheet" href="http://devcows.github.io/devcows.com/css/pygment_highlights.css" />
   
   
-  <meta property="og:title" content="404 Page not found" />
+  <meta property="og:title" content="CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="404.html/" />
+  <meta property="og:url" content="/" />
   <meta property="og:image" content="/media/devcows-logo.png" />
   
 </head>
@@ -78,17 +78,79 @@
 </nav>
 
 
-      <div role="main" class="container main-content">
-  
-  	    <div class="text-center">
-    	      <h1>Whoops, this page doesn't exist.</h1>
-    	      <h1>Move along. (404 error)</h1>
-    	      <br/>
-    
-	      <img src="http://devcows.github.io/devcows.com//img/404-southpark.jpg" />
-	    </div>
-	  
-	  </div>
+    <div role="main" class="container main-content">
+
+      
+        
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI</h1>
+      
+      
+      
+      <span class="post-meta">Posted on January 6, 2016</span>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+          <p>In <code>Raspberry Pi B</code> model by default is limiting the output amperage. We can trick this behavior editing the config file:</p>
+
+<pre><code>vi /boot/config.txt
+</code></pre>
+
+<p>Add the following lines:</p>
+
+<pre><code>safe_mode_gpio=4
+max_usb_current=1   
+</code></pre>
+
+<p>Reboot the raspberry and now you can plug the HDD in the usb port.</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="http://devcows.github.io/devcows.com/blog/2015/06/update-deluge-version-on-your-raspberry-pi/" data-toggle="tooltip" data-placement="top" title="Update Deluge version on your Raspberry PI">&larr; Previous Post</a>
+        </li>
+        
+        
+        <li class="next">
+          <a href="http://devcows.github.io/devcows.com/blog/2016/01/be-sync-with-raspberry-pi/" data-toggle="tooltip" data-placement="top" title="Be sync with Raspberry Pi">Next Post &rarr;</a>
+        </li>
+        
+      </ul>
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+
+    </div>
 
     <footer>
   <div class="container beautiful-jekyll-footer">

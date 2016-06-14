@@ -120,5 +120,71 @@
 </description>
     </item>
     
+    <item>
+      <title>Be sync with Raspberry Pi</title>
+      <link>http://devcows.github.io/devcows.com/blog/2016/01/be-sync-with-raspberry-pi/</link>
+      <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
+      <author>hello@devcows.com (DevCows)</author>
+      <guid>http://devcows.github.io/devcows.com/blog/2016/01/be-sync-with-raspberry-pi/</guid>
+      <description>
+
+&lt;p&gt;Is very common have the necessity to sync some kind of information with other computers or have a synchronize backup. In this post we explain how to install &lt;a href=&#34;https://getsync.com&#34;&gt;Btsync&lt;/a&gt; into the Raspberry PI.&lt;/p&gt;
+
+&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir .btsync
+cd .btsync
+wget https://download-cdn.getsyncapp.com/stable/linux-arm/BitTorrent-Sync_arm.tar.gz
+tar -xvf BitTorrent-Sync_arm.tar.gz
+rm BitTorrent-Sync_arm.tar.gz
+
+ln -s /lib/arm-linux-gnueabihf/ld-linux.so.3 /lib/ld-linux.so.3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;configure&#34;&gt;Configure&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;cd ~/.btsync
+./btsync --dump-sample-config &amp;gt; btsync.conf
+# browse the sample config file and change what you want
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;start-at-boot&#34;&gt;Start at boot&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;nano /etc/init.d/btsync
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Paste the following code in the script:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#! /bin/sh
+# /etc/init.d/btsync
+#
+
+# Carry out specific functions when asked to by the system
+case &amp;quot;$1&amp;quot; in
+start)
+    /home/osmc/.btsync/btsync --config /home/osmc/.btsync/btsync.conf
+    ;;
+stop)
+    killall btsync
+    ;;
+*)
+    echo &amp;quot;Usage: /etc/init.d/btsync {start|stop}&amp;quot;
+    exit 1
+    ;;
+esac
+
+exit 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then change the permissions, test, and register it to run at boot:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo chmod 755 /etc/init.d/btsync
+sudo /etc/init.d/btsync start       # test that the script starts
+sudo /etc/init.d/btsync stop        # test that the script stops
+sudo update-rc.d btsync defaults
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
