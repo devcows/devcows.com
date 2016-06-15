@@ -7,7 +7,7 @@ MetaDataFormat: "yaml"
 copyright: "Copyright (c) 2015 - 2016, DevCows; all rights reserved."
 pygmentsUseClasses: true
 PygmentsCodeFences: true
-Paginate: 1
+Paginate: 10
 
 author:
   name: "DevCows"
