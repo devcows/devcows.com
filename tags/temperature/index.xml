@@ -2,22 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Temperature on DevCows</title>
-    <link>http://devcows.github.io/devcows.com/tags/temperature/</link>
+    <link>http://www.devcows.com/tags/temperature/</link>
     <description>Recent content in Temperature on DevCows</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>hello@devcows.com (DevCows)</managingEditor>
-    <webMaster>hello@devcows.com (DevCows)</webMaster>
     <copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright>
     <lastBuildDate>Wed, 31 Dec 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://devcows.github.io/devcows.com/tags/temperature/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.devcows.com/tags/temperature/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Meteodino monitoring temperature system</title>
-      <link>http://devcows.github.io/devcows.com/blog/2014/12/meteodino-monitoring-temperature-system/</link>
+      <link>http://www.devcows.com/post/arduino-meteodino-temperature/</link>
       <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2014/12/meteodino-monitoring-temperature-system/</guid>
+      
+      <guid>http://www.devcows.com/post/arduino-meteodino-temperature/</guid>
       <description>
 
 &lt;p&gt;A monitoring system for temperature and humidity. The system is composed by a gadget with sensors and a server to store the data. This project combines &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_on_Rails&#34;&gt;Ruby on rails&lt;/a&gt;, &lt;a href=&#34;http://en.wikipedia.org/wiki/AngularJS&#34;&gt;AngularJS&lt;/a&gt;, &lt;a href=&#34;http://coffeescript.org&#34;&gt;Coffescript&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Arduino&#34;&gt;Arduino&lt;/a&gt;.&lt;/p&gt;
@@ -33,7 +31,7 @@
       
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_meteodino_1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/meteodino1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -45,7 +43,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_meteodino_2.png&#34; alt=&#34;Meteodino2&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/meteodino2.png&#34; alt=&#34;Meteodino2&#34; /&gt;
     
     
 &lt;/figure&gt;

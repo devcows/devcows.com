@@ -2,22 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android on DevCows</title>
-    <link>http://devcows.github.io/devcows.com/tags/android/</link>
+    <link>http://www.devcows.com/tags/android/</link>
     <description>Recent content in Android on DevCows</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>hello@devcows.com (DevCows)</managingEditor>
-    <webMaster>hello@devcows.com (DevCows)</webMaster>
     <copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright>
     <lastBuildDate>Sat, 29 Nov 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://devcows.github.io/devcows.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.devcows.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hal-cash finder (Android)</title>
-      <link>http://devcows.github.io/devcows.com/blog/2014/11/hal-cash-finder-android/</link>
+      <link>http://www.devcows.com/post/hal-cash-finder-android/</link>
       <pubDate>Sat, 29 Nov 2014 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2014/11/hal-cash-finder-android/</guid>
+      
+      <guid>http://www.devcows.com/post/hal-cash-finder-android/</guid>
       <description>
 
 &lt;p&gt;Hal-cash finder searches terminal banks compatibles with &lt;a href=&#34;http://www.halcash.com/es&#34;&gt;Hal-cash&lt;/a&gt; method using Hal-cash API and render in Google Maps.&lt;/p&gt;
@@ -34,7 +32,7 @@
 
     &lt;div class=&#34;carousel-inner&#34;&gt;
         &lt;div class=&#34;item active&#34;&gt;
-            &lt;img class=&#34;img-responsive center-block&#34; src=&#34;http://devcows.github.io/devcows.com/ckeditor_assets/pictures/15/content_picture_1.png&#34; style=&#34;height: 400px;&#34;&gt;
+            &lt;img class=&#34;img-responsive center-block&#34; src=&#34;http://www.devcows.com/ckeditor_assets/pictures/15/content_picture_1.png&#34; style=&#34;height: 400px;&#34;&gt;
         &lt;/div&gt;
 
 &lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
@@ -89,10 +87,10 @@
     
     <item>
       <title>Manuncios opensource (Android)</title>
-      <link>http://devcows.github.io/devcows.com/blog/2014/11/manuncios-opensource-android/</link>
+      <link>http://www.devcows.com/post/manuncios-opensource-android/</link>
       <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2014/11/manuncios-opensource-android/</guid>
+      
+      <guid>http://www.devcows.com/post/manuncios-opensource-android/</guid>
       <description>
 
 &lt;p&gt;Manuncios is a native android application that finds offers in &lt;a href=&#34;http://www.milanuncios.com&#34;&gt;Milanuncios.com&lt;/a&gt; web page.&lt;/p&gt;
@@ -113,7 +111,7 @@
       
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios1.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -125,7 +123,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_2_category_list_1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios2_category_list_1.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -137,7 +135,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_2_category_list_2.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios3_category_list_2.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -149,7 +147,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_3_list_offer_1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios4_list_offer_1.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -161,7 +159,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_3_list_offer_2.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios5_list_offer_2.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -173,7 +171,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_4_advanced_searcher.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios6_advanced_searcher.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -185,7 +183,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_5_offer.png&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios7_offer.png&#34;  /&gt;
     
     
 &lt;/figure&gt;

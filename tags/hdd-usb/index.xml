@@ -2,22 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hdd Usb on DevCows</title>
-    <link>http://devcows.github.io/devcows.com/tags/hdd-usb/</link>
+    <link>http://www.devcows.com/tags/hdd-usb/</link>
     <description>Recent content in Hdd Usb on DevCows</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>hello@devcows.com (DevCows)</managingEditor>
-    <webMaster>hello@devcows.com (DevCows)</webMaster>
     <copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright>
     <lastBuildDate>Wed, 06 Jan 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://devcows.github.io/devcows.com/tags/hdd-usb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.devcows.com/tags/hdd-usb/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI</title>
-      <link>http://devcows.github.io/devcows.com/blog/2016/01/connect-an-external-hdd-usb-to-raspberry-pi/</link>
+      <link>http://www.devcows.com/post/connect-an-external-hdd-usb-to-raspberry/</link>
       <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2016/01/connect-an-external-hdd-usb-to-raspberry-pi/</guid>
+      
+      <guid>http://www.devcows.com/post/connect-an-external-hdd-usb-to-raspberry/</guid>
       <description>&lt;p&gt;In &lt;code&gt;Raspberry Pi B&lt;/code&gt; model by default is limiting the output amperage. We can trick this behavior editing the config file:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;vi /boot/config.txt

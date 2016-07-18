@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://devcows.github.io/devcows.com/</loc>
+    <loc>http://www.devcows.com/</loc>
     <lastmod>2016-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://devcows.github.io/devcows.com/blog/2016/01/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</loc>
+    <loc>http://www.devcows.com/post/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</loc>
     <lastmod>2016-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://devcows.github.io/devcows.com/blog/2016/01/homemade-ambilight-with-arduino-and-xbmc/</loc>
+    <loc>http://www.devcows.com/post/arduino-ambilight-xbmc/</loc>
     <lastmod>2016-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://devcows.github.io/devcows.com/blog/2016/01/be-sync-with-raspberry-pi/</loc>
+    <loc>http://www.devcows.com/post/be-in-sync-with-raspberry/</loc>
     <lastmod>2016-01-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://devcows.github.io/devcows.com/blog/2016/01/connect-an-external-hdd-usb-to-raspberry-pi/</loc>
+    <loc>http://www.devcows.com/post/connect-an-external-hdd-usb-to-raspberry/</loc>
     <lastmod>2016-01-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://devcows.github.io/devcows.com/blog/2015/06/update-deluge-version-on-your-raspberry-pi/</loc>
+    <loc>http://www.devcows.com/post/update-deluge-version-on-your-raspberry-pi/</loc>
     <lastmod>2015-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://devcows.github.io/devcows.com/blog/2014/12/meteodino-monitoring-temperature-system/</loc>
+    <loc>http://www.devcows.com/post/arduino-meteodino-temperature/</loc>
     <lastmod>2014-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://devcows.github.io/devcows.com/blog/2014/11/hal-cash-finder-android/</loc>
+    <loc>http://www.devcows.com/post/hal-cash-finder-android/</loc>
     <lastmod>2014-11-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://devcows.github.io/devcows.com/blog/2014/11/manuncios-opensource-android/</loc>
+    <loc>http://www.devcows.com/post/manuncios-opensource-android/</loc>
     <lastmod>2014-11-25T00:00:00+00:00</lastmod>
   </url>
   

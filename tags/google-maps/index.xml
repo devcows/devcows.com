@@ -2,22 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google Maps on DevCows</title>
-    <link>http://devcows.github.io/devcows.com/tags/google-maps/</link>
+    <link>http://www.devcows.com/tags/google-maps/</link>
     <description>Recent content in Google Maps on DevCows</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>hello@devcows.com (DevCows)</managingEditor>
-    <webMaster>hello@devcows.com (DevCows)</webMaster>
     <copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright>
     <lastBuildDate>Sat, 29 Nov 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://devcows.github.io/devcows.com/tags/google-maps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.devcows.com/tags/google-maps/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hal-cash finder (Android)</title>
-      <link>http://devcows.github.io/devcows.com/blog/2014/11/hal-cash-finder-android/</link>
+      <link>http://www.devcows.com/post/hal-cash-finder-android/</link>
       <pubDate>Sat, 29 Nov 2014 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2014/11/hal-cash-finder-android/</guid>
+      
+      <guid>http://www.devcows.com/post/hal-cash-finder-android/</guid>
       <description>
 
 &lt;p&gt;Hal-cash finder searches terminal banks compatibles with &lt;a href=&#34;http://www.halcash.com/es&#34;&gt;Hal-cash&lt;/a&gt; method using Hal-cash API and render in Google Maps.&lt;/p&gt;
@@ -34,7 +32,7 @@
 
     &lt;div class=&#34;carousel-inner&#34;&gt;
         &lt;div class=&#34;item active&#34;&gt;
-            &lt;img class=&#34;img-responsive center-block&#34; src=&#34;http://devcows.github.io/devcows.com/ckeditor_assets/pictures/15/content_picture_1.png&#34; style=&#34;height: 400px;&#34;&gt;
+            &lt;img class=&#34;img-responsive center-block&#34; src=&#34;http://www.devcows.com/ckeditor_assets/pictures/15/content_picture_1.png&#34; style=&#34;height: 400px;&#34;&gt;
         &lt;/div&gt;
 
 &lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;

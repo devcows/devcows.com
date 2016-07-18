@@ -2,22 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xbmc on DevCows</title>
-    <link>http://devcows.github.io/devcows.com/tags/xbmc/</link>
+    <link>http://www.devcows.com/tags/xbmc/</link>
     <description>Recent content in Xbmc on DevCows</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>hello@devcows.com (DevCows)</managingEditor>
-    <webMaster>hello@devcows.com (DevCows)</webMaster>
     <copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright>
     <lastBuildDate>Fri, 15 Jan 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://devcows.github.io/devcows.com/tags/xbmc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.devcows.com/tags/xbmc/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Homemade ambilight with Arduino and Xbmc</title>
-      <link>http://devcows.github.io/devcows.com/blog/2016/01/homemade-ambilight-with-arduino-and-xbmc/</link>
+      <link>http://www.devcows.com/post/arduino-ambilight-xbmc/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2016/01/homemade-ambilight-with-arduino-and-xbmc/</guid>
+      
+      <guid>http://www.devcows.com/post/arduino-ambilight-xbmc/</guid>
       <description>
 
 &lt;p&gt;Homemade ambilight system for TV displays with Arduino and Xbmc.&lt;/p&gt;
@@ -37,7 +35,7 @@
       
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_ambilight1.png&#34; alt=&#34;Ambilight1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight1.png&#34; alt=&#34;Ambilight1&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -49,7 +47,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_ambilight2.png&#34; alt=&#34;Ambilight2&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight2.png&#34; alt=&#34;Ambilight2&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -61,7 +59,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_ambilight3.png&#34; alt=&#34;Ambilight3&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight3.png&#34; alt=&#34;Ambilight3&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -73,7 +71,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_ambilight4.png&#34; alt=&#34;Ambilight4&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight4.png&#34; alt=&#34;Ambilight4&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -89,13 +87,11 @@
 
 &lt;h2 id=&#34;demos&#34;&gt;Demos&lt;/h2&gt;
 
-&lt;p&gt;
-    &lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/QiZHNcrvsQw&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;
-&lt;/p&gt;
+&lt;p&gt;Video 1:
+&lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/QiZHNcrvsQw&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
-&lt;p&gt;
-    &lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/eNhAsUhEIEE&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;
-&lt;/p&gt;
+&lt;p&gt;Video 2:
+&lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/eNhAsUhEIEE&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
 
@@ -113,7 +109,7 @@
 
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_ambilight_wiring-diagram.png&#34; alt=&#34;Ambilight5&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/content_ambilight_wiring-diagram.png&#34; alt=&#34;Ambilight5&#34; /&gt;
     
     
 &lt;/figure&gt;

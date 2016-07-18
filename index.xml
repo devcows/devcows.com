@@ -2,22 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DevCows</title>
-    <link>http://devcows.github.io/devcows.com/</link>
+    <link>http://www.devcows.com/</link>
     <description>Recent content on DevCows</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>hello@devcows.com (DevCows)</managingEditor>
-    <webMaster>hello@devcows.com (DevCows)</webMaster>
     <copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright>
     <lastBuildDate>Tue, 26 Jan 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://devcows.github.io/devcows.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.devcows.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs</title>
-      <link>http://devcows.github.io/devcows.com/blog/2016/01/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</link>
+      <link>http://www.devcows.com/post/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</link>
       <pubDate>Tue, 26 Jan 2016 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2016/01/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</guid>
+      
+      <guid>http://www.devcows.com/post/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</guid>
       <description>&lt;p&gt;In this post we are going to create an IPsec VPN tunnel between two remote sites using Mikrotik routers with dynamic public IPs . By default, Mikrotik does not allow to use FQDN (domain names) to setup an IPsec tunnel, so we are going to create some scripts to update the IPsec configuration whenever the local or remote IPs change.&lt;/p&gt;
 
 &lt;p&gt;The network layout is as follows:&lt;/p&gt;
@@ -25,7 +23,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/mikrotik-ipsec-1.png&#34; alt=&#34;Mikrotik IPsec&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/mikrotik-ipsec-1.png&#34; alt=&#34;Mikrotik IPsec&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -76,7 +74,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/mikrotik-ipsec-2.png&#34; alt=&#34;Mikrotik IPsec&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/mikrotik-ipsec-2.png&#34; alt=&#34;Mikrotik IPsec&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -102,7 +100,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/mikrotik-ipsec-3.png&#34; alt=&#34;Mikrotik IPsec&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/mikrotik-ipsec-3.png&#34; alt=&#34;Mikrotik IPsec&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -122,10 +120,10 @@
     
     <item>
       <title>Homemade ambilight with Arduino and Xbmc</title>
-      <link>http://devcows.github.io/devcows.com/blog/2016/01/homemade-ambilight-with-arduino-and-xbmc/</link>
+      <link>http://www.devcows.com/post/arduino-ambilight-xbmc/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2016/01/homemade-ambilight-with-arduino-and-xbmc/</guid>
+      
+      <guid>http://www.devcows.com/post/arduino-ambilight-xbmc/</guid>
       <description>
 
 &lt;p&gt;Homemade ambilight system for TV displays with Arduino and Xbmc.&lt;/p&gt;
@@ -145,7 +143,7 @@
       
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_ambilight1.png&#34; alt=&#34;Ambilight1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight1.png&#34; alt=&#34;Ambilight1&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -157,7 +155,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_ambilight2.png&#34; alt=&#34;Ambilight2&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight2.png&#34; alt=&#34;Ambilight2&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -169,7 +167,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_ambilight3.png&#34; alt=&#34;Ambilight3&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight3.png&#34; alt=&#34;Ambilight3&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -181,7 +179,7 @@
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_ambilight4.png&#34; alt=&#34;Ambilight4&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight4.png&#34; alt=&#34;Ambilight4&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -197,13 +195,11 @@
 
 &lt;h2 id=&#34;demos&#34;&gt;Demos&lt;/h2&gt;
 
-&lt;p&gt;
-    &lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/QiZHNcrvsQw&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;
-&lt;/p&gt;
+&lt;p&gt;Video 1:
+&lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/QiZHNcrvsQw&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
-&lt;p&gt;
-    &lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/eNhAsUhEIEE&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;
-&lt;/p&gt;
+&lt;p&gt;Video 2:
+&lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/eNhAsUhEIEE&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
 
@@ -221,7 +217,7 @@
 
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_ambilight_wiring-diagram.png&#34; alt=&#34;Ambilight5&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/content_ambilight_wiring-diagram.png&#34; alt=&#34;Ambilight5&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -242,10 +238,10 @@
     
     <item>
       <title>Be sync with Raspberry Pi</title>
-      <link>http://devcows.github.io/devcows.com/blog/2016/01/be-sync-with-raspberry-pi/</link>
+      <link>http://www.devcows.com/post/be-in-sync-with-raspberry/</link>
       <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2016/01/be-sync-with-raspberry-pi/</guid>
+      
+      <guid>http://www.devcows.com/post/be-in-sync-with-raspberry/</guid>
       <description>
 
 &lt;p&gt;Is very common have the necessity to sync some kind of information with other computers or have a synchronize backup. In this post we explain how to install &lt;a href=&#34;https://getsync.com&#34;&gt;Btsync&lt;/a&gt; into the Raspberry PI.&lt;/p&gt;
@@ -308,10 +304,10 @@ sudo update-rc.d btsync defaults
     
     <item>
       <title>CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI</title>
-      <link>http://devcows.github.io/devcows.com/blog/2016/01/connect-an-external-hdd-usb-to-raspberry-pi/</link>
+      <link>http://www.devcows.com/post/connect-an-external-hdd-usb-to-raspberry/</link>
       <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2016/01/connect-an-external-hdd-usb-to-raspberry-pi/</guid>
+      
+      <guid>http://www.devcows.com/post/connect-an-external-hdd-usb-to-raspberry/</guid>
       <description>&lt;p&gt;In &lt;code&gt;Raspberry Pi B&lt;/code&gt; model by default is limiting the output amperage. We can trick this behavior editing the config file:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;vi /boot/config.txt
@@ -329,10 +325,10 @@ max_usb_current=1
     
     <item>
       <title>Update Deluge version on your Raspberry PI</title>
-      <link>http://devcows.github.io/devcows.com/blog/2015/06/update-deluge-version-on-your-raspberry-pi/</link>
+      <link>http://www.devcows.com/post/update-deluge-version-on-your-raspberry-pi/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2015/06/update-deluge-version-on-your-raspberry-pi/</guid>
+      
+      <guid>http://www.devcows.com/post/update-deluge-version-on-your-raspberry-pi/</guid>
       <description>
 
 &lt;p&gt;Unfortunately, at the time of writing this post the latest version available from Raspbian repositories is 1.3.3. And you may not use other repositories since they will probably not provide packages for ARM devices such as the Raspberry PI.&lt;/p&gt;
@@ -545,10 +541,10 @@ sudo chmod 660 ~/.config/deluge/auth
     
     <item>
       <title>Meteodino monitoring temperature system</title>
-      <link>http://devcows.github.io/devcows.com/blog/2014/12/meteodino-monitoring-temperature-system/</link>
+      <link>http://www.devcows.com/post/arduino-meteodino-temperature/</link>
       <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2014/12/meteodino-monitoring-temperature-system/</guid>
+      
+      <guid>http://www.devcows.com/post/arduino-meteodino-temperature/</guid>
       <description>
 
 &lt;p&gt;A monitoring system for temperature and humidity. The system is composed by a gadget with sensors and a server to store the data. This project combines &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_on_Rails&#34;&gt;Ruby on rails&lt;/a&gt;, &lt;a href=&#34;http://en.wikipedia.org/wiki/AngularJS&#34;&gt;AngularJS&lt;/a&gt;, &lt;a href=&#34;http://coffeescript.org&#34;&gt;Coffescript&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Arduino&#34;&gt;Arduino&lt;/a&gt;.&lt;/p&gt;
@@ -564,7 +560,7 @@ sudo chmod 660 ~/.config/deluge/auth
       
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_meteodino_1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/meteodino1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -576,7 +572,7 @@ sudo chmod 660 ~/.config/deluge/auth
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_meteodino_2.png&#34; alt=&#34;Meteodino2&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/meteodino2.png&#34; alt=&#34;Meteodino2&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -637,10 +633,10 @@ sudo chmod 660 ~/.config/deluge/auth
     
     <item>
       <title>Hal-cash finder (Android)</title>
-      <link>http://devcows.github.io/devcows.com/blog/2014/11/hal-cash-finder-android/</link>
+      <link>http://www.devcows.com/post/hal-cash-finder-android/</link>
       <pubDate>Sat, 29 Nov 2014 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2014/11/hal-cash-finder-android/</guid>
+      
+      <guid>http://www.devcows.com/post/hal-cash-finder-android/</guid>
       <description>
 
 &lt;p&gt;Hal-cash finder searches terminal banks compatibles with &lt;a href=&#34;http://www.halcash.com/es&#34;&gt;Hal-cash&lt;/a&gt; method using Hal-cash API and render in Google Maps.&lt;/p&gt;
@@ -657,7 +653,7 @@ sudo chmod 660 ~/.config/deluge/auth
 
     &lt;div class=&#34;carousel-inner&#34;&gt;
         &lt;div class=&#34;item active&#34;&gt;
-            &lt;img class=&#34;img-responsive center-block&#34; src=&#34;http://devcows.github.io/devcows.com/ckeditor_assets/pictures/15/content_picture_1.png&#34; style=&#34;height: 400px;&#34;&gt;
+            &lt;img class=&#34;img-responsive center-block&#34; src=&#34;http://www.devcows.com/ckeditor_assets/pictures/15/content_picture_1.png&#34; style=&#34;height: 400px;&#34;&gt;
         &lt;/div&gt;
 
 &lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
@@ -712,10 +708,10 @@ sudo chmod 660 ~/.config/deluge/auth
     
     <item>
       <title>Manuncios opensource (Android)</title>
-      <link>http://devcows.github.io/devcows.com/blog/2014/11/manuncios-opensource-android/</link>
+      <link>http://www.devcows.com/post/manuncios-opensource-android/</link>
       <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
-      <author>hello@devcows.com (DevCows)</author>
-      <guid>http://devcows.github.io/devcows.com/blog/2014/11/manuncios-opensource-android/</guid>
+      
+      <guid>http://www.devcows.com/post/manuncios-opensource-android/</guid>
       <description>
 
 &lt;p&gt;Manuncios is a native android application that finds offers in &lt;a href=&#34;http://www.milanuncios.com&#34;&gt;Milanuncios.com&lt;/a&gt; web page.&lt;/p&gt;
@@ -736,7 +732,7 @@ sudo chmod 660 ~/.config/deluge/auth
       
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios1.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -748,7 +744,7 @@ sudo chmod 660 ~/.config/deluge/auth
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_2_category_list_1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios2_category_list_1.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -760,7 +756,7 @@ sudo chmod 660 ~/.config/deluge/auth
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_2_category_list_2.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios3_category_list_2.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -772,7 +768,7 @@ sudo chmod 660 ~/.config/deluge/auth
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_3_list_offer_1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios4_list_offer_1.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -784,7 +780,7 @@ sudo chmod 660 ~/.config/deluge/auth
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_3_list_offer_2.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios5_list_offer_2.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -796,7 +792,7 @@ sudo chmod 660 ~/.config/deluge/auth
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_4_advanced_searcher.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios6_advanced_searcher.jpg&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -808,7 +804,7 @@ sudo chmod 660 ~/.config/deluge/auth
   
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://devcows.github.io/devcows.com/media/content_picture_5_offer.png&#34; alt=&#34;Meteodino1&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios7_offer.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
