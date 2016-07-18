@@ -1,0 +1,4 @@
+weight: 5
+name: "Devops"
+icon: "fa fa-cogs"
+description: "We use test units and we are used to working with continuous integration processes. Also we build images with docker in our production servers."
