@@ -6,7 +6,7 @@ tags:
   - "deluge"
   - "raspberry pi"
 author: Adrian Moreno
-image: "media/raspberry-pi.png"
+banner: "media/raspberry-pi.png"
 ---
 
 Unfortunately, at the time of writing this post the latest version available from Raspbian repositories is 1.3.3. And you may not use other repositories since they will probably not provide packages for ARM devices such as the Raspberry PI.

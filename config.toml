@@ -32,11 +32,11 @@ paginate = 10
     # Enable the contact form by entering your Formspree.io email
     email = "info@devcows.com"
 
-    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
-    copyright = "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
+    about_us = "<p>We are specialized in Ruby on Rails, Django and Android development.</p><p>If you want to obtain more information about the team, please, feel free to <a href='/contact'>contact us</a>. We would love to hear from you.</p>"
+    copyright = "Copyright (c) 2015 - 2016, DevCows; all rights reserved."
     date_format = "2006-01-02"
     logo = "media/devcows-logo.png"
-    address = """<p><strong>DevCows</strong>
+    address = """<p><strong><u>DevCows</u></strong>
         <br>Avda. Països Catalans, 28 B - local B
         <br>Sant Pere i Sant Pau
         <br>43007
@@ -63,6 +63,12 @@ paginate = 10
 
 [social]
     github = "devcows"
+
+[params.contact]
+    map = true
+    mapLat = 41.1333037
+    mapLng = 1.2467193
+    mapTitle = "DevCows"
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
