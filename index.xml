@@ -119,87 +119,14 @@
     </item>
     
     <item>
-      <title>Homemade ambilight with Arduino and Xbmc</title>
+      <title>Homemade ambilight with Arduino and Kodi</title>
       <link>http://www.devcows.com/post/arduino-ambilight-xbmc/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>http://www.devcows.com/post/arduino-ambilight-xbmc/</guid>
       <description>
 
-&lt;p&gt;Homemade ambilight system for TV displays with Arduino and Xbmc.&lt;/p&gt;
-
-&lt;p&gt;## Images&lt;/p&gt;
-
-&lt;div class=&#34;carousel slide&#34; id=&#34;myCarousel&#34;&gt;
-    &lt;ol class=&#34;carousel-indicators&#34;&gt;
-        &lt;li class=&#34;active&#34; data-slide-to=&#34;0&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;1&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;2&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;3&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-
-    &lt;div class=&#34;carousel-inner&#34;&gt;
-        &lt;div class=&#34;item active&#34;&gt;
-      
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/ambilight1.png&#34; alt=&#34;Ambilight1&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-        &lt;/div&gt;
-
-&lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-  
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/ambilight2.png&#34; alt=&#34;Ambilight2&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-  
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/ambilight3.png&#34; alt=&#34;Ambilight3&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-  
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/ambilight4.png&#34; alt=&#34;Ambilight4&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;a class=&amp;quot;left carousel-control&amp;quot; data-slide=&amp;quot;prev&amp;quot; href=&amp;quot;#myCarousel&amp;quot; role=&amp;quot;button&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;sr-only&amp;quot;&amp;gt;Previous&amp;lt;/span&amp;gt; &amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a class=&#34;right carousel-control&#34; data-slide=&#34;next&#34; href=&#34;#myCarousel&#34; role=&#34;button&#34;&gt; &lt;span class=&#34;sr-only&#34;&gt;Next&lt;/span&gt; &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;demos&#34;&gt;Demos&lt;/h2&gt;
-
-&lt;p&gt;Video 1:
-&lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/QiZHNcrvsQw&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;Video 2:
-&lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/eNhAsUhEIEE&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;The Ambilight system is a gadget for TV to enjoy the TV shows. The system is composed by a concrete RGB LEDs (25 or 50 LEDs) and the LEDs reproduce the border color from TV. This post explains how create a homemade Ambilight system and connect to TV with &lt;a href=&#34;http://kodi.tv&#34;&gt;Kodi&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
 
@@ -210,29 +137,99 @@
 &lt;li&gt;5V 2A Power Adapter Charger: &lt;a href=&#34;http://www.dx.com/p/5v-2a-power-adapter-charger-for-security-camera-scanner-black-5-5-x-2-1mm-eu-plug-159396#.VLwo2C7F9TA&#34;&gt;Link Dx&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Total price approximately: 100€&lt;/p&gt;
+&lt;p&gt;Total price: 100€ (approximately)&lt;/p&gt;
 
-&lt;p&gt;## Connection schema&lt;/p&gt;
+&lt;h2 id=&#34;connection-schema&#34;&gt;Connection_schema&lt;/h2&gt;
 
 
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
-        &lt;img src=&#34;http://www.devcows.com/media/content_ambilight_wiring-diagram.png&#34; alt=&#34;Ambilight5&#34; /&gt;
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight_wiring-diagram.png&#34; alt=&#34;Ambilight5&#34; /&gt;
     
     
 &lt;/figure&gt;
 
 
 
+&lt;h2 id=&#34;making-of&#34;&gt;Making_of&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;
+      Soldering the array of 25 LEDs in one. After test the array:&lt;br /&gt;
+      
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight1.png&#34; alt=&#34;Ambilight1&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+    &lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;p&gt;
+      Prepare back LED support with TV shape (VESA and connectors). Fix LEDs in the support.&lt;br /&gt;
+      
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight2.png&#34; alt=&#34;Ambilight2&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+    &lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;p&gt;
+      Install the LED support on TV back (VESA).&lt;br /&gt;
+      
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight3.png&#34; alt=&#34;Ambilight3&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+
+      &lt;br /&gt;
+      &lt;br /&gt;
+
+      
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/ambilight4.png&#34; alt=&#34;Ambilight4&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+    &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;h2 id=&#34;software&#34;&gt;Software&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://kodi.tv/download&#34;&gt;Xbmc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kodi.tv/download&#34;&gt;Kodi&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://kodi.wiki/view/Add-on:XBMC_Boblight&#34;&gt;Boblight Xbmc&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://code.google.com/p/boblight&#34;&gt;Boblight Service&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://learn.adafruit.com/adalight-diy-ambient-tv-lighting/download-and-install&#34;&gt;Arduino code&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.tweaking4all.com/home-theatre/xbmc/boblight-config-maker&#34;&gt;Boblight config maker&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&#34;demos&#34;&gt;Demos&lt;/h2&gt;
+
+&lt;p&gt;Video 1:
+&lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/QiZHNcrvsQw&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;Video 2:
+&lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/eNhAsUhEIEE&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -846,6 +843,20 @@ This application uses libraries and implements different design patterns, for ex
 &lt;li&gt;&lt;a href=&#34;https://bitbucket.org/devcows/manuncios-opensource/src/0ad59fd9b04770668d81eba26274a8679717eaec/app/app-release.apk?at=master&#34;&gt;DOWNLOAD&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://bitbucket.org/devcows/manuncios-opensource&#34;&gt;GO TO REPOSITORY&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://www.devcows.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.devcows.com/contact/</guid>
+      <description>
+
+&lt;h1 id=&#34;we-are-here-to-help-you&#34;&gt;We are here to help you&lt;/h1&gt;
+
+&lt;p&gt;Have any question? Drop us a message. Just fill out the form below and we’ll get back to you as soon as possible (usually within one business day).&lt;/p&gt;
 </description>
     </item>
     
