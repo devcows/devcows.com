@@ -524,7 +524,7 @@ sudo chmod 660 ~/.config/deluge/auth
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="#">
+                        <a href="http://www.devcows.com/post/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/">
                           
                             <img src="http://www.devcows.com/media/mikrotik_ipsec.png" alt="" class="img-responsive">
                           
@@ -537,7 +537,7 @@ sudo chmod 660 ~/.config/deluge/auth
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="#">
+                        <a href="http://www.devcows.com/post/arduino-ambilight-xbmc/">
                           
                             <img src="http://www.devcows.com/media/ambilight.jpg" alt="" class="img-responsive">
                           
@@ -550,7 +550,9 @@ sudo chmod 660 ~/.config/deluge/auth
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="#">
+                        <a href="http://www.devcows.com/post/be-in-sync-with-raspberry/">
+                          
+                            <img src="http://www.devcows.com/media/BTSync.png" alt="" class="img-responsive">
                           
                         </a>
                     </div>
@@ -607,7 +609,7 @@ sudo chmod 660 ~/.config/deluge/auth
             
             <p class="pull-right">
               Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
-              Ported by <a href="http://devcows.com">DevCows</a>
+              Ported by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
                 
             </p>
         </div>
@@ -635,6 +637,81 @@ sudo chmod 660 ~/.config/deluge/auth
 
 
 <script src="http://www.devcows.com/js/owl.carousel.min.js"></script>
+
+  
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false" data-turbolinks-eval="false"></script>
+<script src="http://www.devcows.com/js/gmaps.js"></script>
+
+
+
+  
+  <script type="text/javascript">
+    $(document).ready(ready);
+    $(document).on('page:load', ready);
+
+     
+    function ready() {
+        if ($("#map").length > 0) {
+            var styles = [{
+                "featureType": "landscape",
+                "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]
+            }, {
+                "featureType": "poi",
+                "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]
+            }, {
+                "featureType": "road.highway",
+                "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
+            }, {
+                "featureType": "road.arterial",
+                "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]
+            }, {
+                "featureType": "road.local",
+                "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]
+            }, {
+                "featureType": "transit",
+                "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
+            }, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {
+                "featureType": "water",
+                "elementType": "labels",
+                "stylers": [{"visibility": "on"}, {"lightness": -25}, {"saturation": -100}]
+            }, {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [{"hue": "#ffff00"}, {"lightness": -25}, {"saturation": -97}]
+            }];
+            map = new GMaps({
+                el: '#map',
+                lat:  41.1333037 ,
+                lng:  1.2467193 ,
+                zoomControl: true,
+                zoomControlOpt: {
+                    style: 'SMALL',
+                    position: 'TOP_LEFT'
+                },
+                panControl: false,
+                streetViewControl: false,
+                mapTypeControl: false,
+                overviewMapControl: false,
+                scrollwheel: false,
+                draggable: false,
+                styles: styles
+            });
+
+            var image = 'http:\/\/www.devcows.com\/img/marker.png';
+
+            map.addMarker({
+                lat:  41.1333037 ,
+                lng:  1.2467193 ,
+                icon: image,
+                title: 'DevCows',
+                 
+
+            });
+        }
+    }
+  </script>
+
+
 
 
   </body>

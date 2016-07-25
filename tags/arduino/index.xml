@@ -133,17 +133,12 @@
       <guid>http://www.devcows.com/post/arduino-meteodino-temperature/</guid>
       <description>
 
-&lt;p&gt;A monitoring system for temperature and humidity. The system is composed by a gadget with sensors and a server to store the data. This project combines &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_on_Rails&#34;&gt;Ruby on rails&lt;/a&gt;, &lt;a href=&#34;http://en.wikipedia.org/wiki/AngularJS&#34;&gt;AngularJS&lt;/a&gt;, &lt;a href=&#34;http://coffeescript.org&#34;&gt;Coffescript&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Arduino&#34;&gt;Arduino&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Meteodino is a personal project using Arduino and temperature and humidity sensor. The project challenge is build a gadget to measure the temperature and humidity and send these data to a server and to after analyze these data. This project combines &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_on_Rails&#34;&gt;Ruby on rails&lt;/a&gt;, &lt;a href=&#34;http://en.wikipedia.org/wiki/AngularJS&#34;&gt;AngularJS&lt;/a&gt;, &lt;a href=&#34;http://coffeescript.org&#34;&gt;Coffescript&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Arduino&#34;&gt;Arduino&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class=&#34;carousel slide&#34; id=&#34;myCarousel&#34;&gt;
-    &lt;ol class=&#34;carousel-indicators&#34;&gt;
-        &lt;li class=&#34;active&#34; data-slide-to=&#34;0&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;1&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-    &lt;/ol&gt;
+&lt;h2 id=&#34;making-of&#34;&gt;Making-of&lt;/h2&gt;
 
-    &lt;div class=&#34;carousel-inner&#34;&gt;
-        &lt;div class=&#34;item active&#34;&gt;
-      
+&lt;p&gt;Mounting the gadget:
+
 &lt;figure class=&#34;img-responsive center-block&#34;&gt;
     
         &lt;img src=&#34;http://www.devcows.com/media/meteodino1.jpg&#34; alt=&#34;Meteodino1&#34; /&gt;
@@ -151,29 +146,11 @@
     
 &lt;/figure&gt;
 
-           
-        &lt;/div&gt;
+&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-  
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/meteodino2.png&#34; alt=&#34;Meteodino2&#34; /&gt;
-    
-    
-&lt;/figure&gt;
+&lt;h1 id=&#34;gadget&#34;&gt;Gadget&lt;/h1&gt;
 
-           
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;a class=&amp;quot;left carousel-control&amp;quot; data-slide=&amp;quot;prev&amp;quot; href=&amp;quot;#myCarousel&amp;quot; role=&amp;quot;button&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;sr-only&amp;quot;&amp;gt;Previous&amp;lt;/span&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a class=&amp;quot;right carousel-control&amp;quot; data-slide=&amp;quot;next&amp;quot; href=&amp;quot;#myCarousel&amp;quot; role=&amp;quot;button&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;sr-only&amp;quot;&amp;gt;Next&amp;lt;/span&amp;gt; &amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;## Description&lt;/p&gt;
-
-&lt;p&gt;## Server&lt;/p&gt;
+&lt;h2 id=&#34;server&#34;&gt;Server&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;API REST.&lt;/li&gt;
@@ -190,7 +167,7 @@
 &lt;li&gt;LCD 16x2: &lt;a href=&#34;http://www.dx.com/p/16-x-2-character-lcd-display-module-with-blue-backlight-121356#.VMk3c17F9TA&#34;&gt;Link Dx&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;## Temperature gadget =&amp;gt; Raspberry pi (coming soon)&lt;/p&gt;
+&lt;h2 id=&#34;temperature-gadget-raspberry-pi-coming-soon&#34;&gt;Temperature gadget =&amp;gt; Raspberry pi (coming soon)&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Raspberry pi&lt;/li&gt;
@@ -201,7 +178,7 @@
 
 &lt;p&gt;Demo at: &lt;a href=&#34;http://meteodino.guerreroibarra.com&#34;&gt;meteodino.guerreroibarra.com&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;## Remarks&lt;/p&gt;
+&lt;h2 id=&#34;remarks&#34;&gt;Remarks &lt;/h2&gt;
 
 &lt;p&gt;The web page is developed with &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_on_Rails&#34;&gt;Ruby on Rails&lt;/a&gt; and &lt;a href=&#34;http://getbootstrap.com&#34;&gt;Bootstrap&lt;/a&gt;. The web uses some interesting gems, we will explain some:&lt;/p&gt;
 
