@@ -7,33 +7,22 @@ tags:
   - "arduino"
   - "temperature"
   - "humidity"
-author: "GUILLERMO"
-image: "media/meteodino.png"
+author: Guillermo Guerrero
+banner: "media/meteodino.png"
+aliases:
+  - "/blog/arduino-meteodino"
 ---
 
-A monitoring system for temperature and humidity. The system is composed by a gadget with sensors and a server to store the data. This project combines [Ruby on rails](http://en.wikipedia.org/wiki/Ruby_on_Rails), [AngularJS](http://en.wikipedia.org/wiki/AngularJS), [Coffescript](http://coffeescript.org) and [Arduino](http://en.wikipedia.org/wiki/Arduino).
+Meteodino is a personal project using Arduino and temperature and humidity sensor. The project challenge is build a gadget to measure the temperature and humidity and send these data to a server and to after analyze these data. This project combines [Ruby on rails](http://en.wikipedia.org/wiki/Ruby_on_Rails), [AngularJS](http://en.wikipedia.org/wiki/AngularJS), [Coffescript](http://coffeescript.org) and [Arduino](http://en.wikipedia.org/wiki/Arduino).
 
-<div class="carousel slide" id="myCarousel">
-	<ol class="carousel-indicators">
-		<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-		<li data-slide-to="1" data-target="#myCarousel"></li>
-	</ol>
+## Making-of
 
-	<div class="carousel-inner">
-		<div class="item active">
-      {{% img class="img-responsive center-block" src="media/meteodino1.jpg" alt="Meteodino1" baseurl="true" style="height: 400px;" %}}			
-		</div>
+Mounting the gadget:
+{{% img class="img-responsive center-block" src="media/meteodino1.jpg" alt="Meteodino1" baseurl="true" style="height: 400px;" %}}
 
-		<div class="item">
-      {{% img class="img-responsive center-block" src="media/meteodino2.png" alt="Meteodino2" baseurl="true" style="height: 400px;" %}}			
-		</div>
-	</div>
-	<a class="left carousel-control" data-slide="prev" href="#myCarousel" role="button"><span class="sr-only">Previous</span> </a> <a class="right carousel-control" data-slide="next" href="#myCarousel" role="button"> <span class="sr-only">Next</span> </a>
-</div>
+# Gadget
 
-## Description
-
-## Server
+## Server
 
 - API REST.
 - Frontend with [AngularJS](http://en.wikipedia.org/wiki/AngularJS).
@@ -46,7 +35,7 @@ A monitoring system for temperature and humidity. The system is composed by a ga
 - Temperature sensor (DHT-22): [Link Dx](http://www.dx.com/p/arduino-dht11-digital-temperature-humidity-sensor-138531)
 - LCD 16x2: [Link Dx](http://www.dx.com/p/16-x-2-character-lcd-display-module-with-blue-backlight-121356#.VMk3c17F9TA)
 
-## Temperature gadget => Raspberry pi (coming soon)
+## Temperature gadget => Raspberry pi (coming soon)
 
 - Raspberry pi
 - Temperature sensor (DHT-11): [Link Dx](http://www.dx.com/p/arduino-digital-temperature-humidity-sensor-module-121350#.VMk3UV7F9TA) (Shit, very imprecise)
@@ -55,7 +44,7 @@ A monitoring system for temperature and humidity. The system is composed by a ga
 
 Demo at: [meteodino.guerreroibarra.com](http://meteodino.guerreroibarra.com)
 
-## Remarks
+## Remarks 
 
 The web page is developed with [Ruby on Rails](http://en.wikipedia.org/wiki/Ruby_on_Rails) and [Bootstrap](http://getbootstrap.com). The web uses some interesting gems, we will explain some:
 

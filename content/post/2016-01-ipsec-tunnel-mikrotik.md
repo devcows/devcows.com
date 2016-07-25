@@ -8,6 +8,8 @@ tags:
   - "ipsec"
 author: Adrian Moreno
 banner: "media/mikrotik_ipsec.png"
+aliases:
+  - "/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips"
 ---
 
 In this post we are going to create an IPsec VPN tunnel between two remote sites using Mikrotik routers with dynamic public IPs . By default, Mikrotik does not allow to use FQDN (domain names) to setup an IPsec tunnel, so we are going to create some scripts to update the IPsec configuration whenever the local or remote IPs change.

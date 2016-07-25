@@ -9,6 +9,8 @@ tags:
   - "kodi"
 author: Guillermo Guerrero
 banner: "media/ambilight.jpg"
+aliases:
+  - "/blog/arduino-ambilight-kodi"
 ---
 
 The Ambilight system is a gadget for TV to enjoy the TV shows. The system is composed by a concrete RGB LEDs (25 or 50 LEDs) and the LEDs reproduce the border color from TV. This post explains how create a homemade Ambilight system and connect to TV with [Kodi](http://kodi.tv).

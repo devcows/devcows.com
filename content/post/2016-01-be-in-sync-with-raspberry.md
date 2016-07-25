@@ -6,8 +6,10 @@ tags:
   - "mikrotik"
   - "vpn"
   - "ipsec"
-author: "GUILLERMO"
-image: "media/BTSync.png"
+author: Guillermo Guerrero
+banner: "media/BTSync.png"
+aliases:
+  - "/blog/be-in-sync-with-raspberry"
 ---
 
 Is very common have the necessity to sync some kind of information with other computers or have a synchronize backup. In this post we explain how to install [Btsync](https://getsync.com) into the Raspberry PI.

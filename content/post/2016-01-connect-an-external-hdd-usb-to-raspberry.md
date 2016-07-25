@@ -5,8 +5,10 @@ date: "2016-01-06"
 tags:
   - "hdd usb"
   - "raspberry pi"
-author: "GUILLERMO"
-image: "media/raspberry-pi.png"
+author: Guillermo Guerrero
+banner: "media/raspberry-pi.png"
+aliases:
+  - "/blog/connect-an-external-hdd-(usb)-to-raspberry"
 ---
 
 In `Raspberry Pi B` model by default is limiting the output amperage. We can trick this behavior editing the config file:
