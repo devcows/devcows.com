@@ -688,109 +688,7 @@ sudo chmod 660 ~/.config/deluge/auth
       <guid>http://www.devcows.com/post/manuncios-opensource-android/</guid>
       <description>
 
-&lt;p&gt;Manuncios is a native android application that finds offers in &lt;a href=&#34;http://www.milanuncios.com&#34;&gt;Milanuncios.com&lt;/a&gt; web page.&lt;/p&gt;
-
-&lt;div class=&#34;carousel slide&#34; id=&#34;myCarousel&#34;&gt;
-    &lt;ol class=&#34;carousel-indicators&#34;&gt;
-        &lt;li class=&#34;active&#34; data-slide-to=&#34;0&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;1&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;2&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;3&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;4&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;5&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;6&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-
-    &lt;div class=&#34;carousel-inner&#34;&gt;
-        &lt;div class=&#34;item active&#34;&gt;
-      
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/manuncios1.jpg&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-           
-        &lt;/div&gt;
-
-&lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-  
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/manuncios2_category_list_1.jpg&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-           
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-  
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/manuncios3_category_list_2.jpg&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-           
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-  
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/manuncios4_list_offer_1.jpg&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-           
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-  
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/manuncios5_list_offer_2.jpg&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-           
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-  
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/manuncios6_advanced_searcher.jpg&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-           
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-  
-&lt;figure class=&#34;img-responsive center-block&#34;&gt;
-    
-        &lt;img src=&#34;http://www.devcows.com/media/manuncios7_offer.png&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-           
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;a class=&amp;quot;left carousel-control&amp;quot; data-slide=&amp;quot;prev&amp;quot; href=&amp;quot;#myCarousel&amp;quot; role=&amp;quot;button&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;sr-only&amp;quot;&amp;gt;Previous&amp;lt;/span&amp;gt; &amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a class=&#34;right carousel-control&#34; data-slide=&#34;next&#34; href=&#34;#myCarousel&#34; role=&#34;button&#34;&gt; &lt;span class=&#34;sr-only&#34;&gt;Next&lt;/span&gt; &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Manuncios is a native android application that finds offers in &lt;a href=&#34;http://www.milanuncios.com&#34;&gt;Milanuncios.com&lt;/a&gt; web page. This application is my first Android application and it&amp;rsquo;s a Helloworld.&lt;/p&gt;
 
 &lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
 
@@ -805,7 +703,88 @@ sudo chmod 660 ~/.config/deluge/auth
 
 &lt;p&gt;In &lt;a href=&#34;http://www.milanuncios.com&#34;&gt;Milanuncios.com&lt;/a&gt; you can find different kind of objects, for example: new products o used in different categories like home, hobby and sports, electronic, etc.&lt;/p&gt;
 
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+
 &lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/S2Kg5AeTFRA&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
+
+&lt;p&gt;Splash intro:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios1.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;Main Screen:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios2_category_list_1.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;Lateral menu:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios3_category_list_2.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;Listing by category offers:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios4_list_offer_1.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;Sorting options:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios5_list_offer_2.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;Advanced searcher:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios6_advanced_searcher.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;Offer detail:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/manuncios7_offer.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
 
 &lt;p&gt;## Remarks&lt;/p&gt;
 
