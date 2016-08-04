@@ -18,47 +18,7 @@
       <guid>http://www.devcows.com/post/hal-cash-finder-android/</guid>
       <description>
 
-&lt;p&gt;Hal-cash finder searches terminal banks compatibles with &lt;a href=&#34;http://www.halcash.com/es&#34;&gt;Hal-cash&lt;/a&gt; method using Hal-cash API and render in Google Maps.&lt;/p&gt;
-
-&lt;div class=&#34;carousel slide&#34; id=&#34;myCarousel&#34;&gt;
-    &lt;ol class=&#34;carousel-indicators&#34;&gt;
-        &lt;li class=&#34;active&#34; data-slide-to=&#34;0&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;1&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;2&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;3&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;4&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-        &lt;li data-slide-to=&#34;5&#34; data-target=&#34;#myCarousel&#34;&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-
-    &lt;div class=&#34;carousel-inner&#34;&gt;
-        &lt;div class=&#34;item active&#34;&gt;
-            &lt;img class=&#34;img-responsive center-block&#34; src=&#34;http://www.devcows.com/ckeditor_assets/pictures/15/content_picture_1.png&#34; style=&#34;height: 400px;&#34;&gt;
-        &lt;/div&gt;
-
-&lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-        &amp;lt;img class=&amp;quot;img-responsive center-block&amp;quot; src=&amp;quot;/ckeditor_assets/pictures/12/content_picture_2.png&amp;quot; style=&amp;quot;height: 400px;&amp;quot;&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-        &amp;lt;img class=&amp;quot;img-responsive center-block&amp;quot; src=&amp;quot;/ckeditor_assets/pictures/14/content_picture_3.png&amp;quot; style=&amp;quot;height: 400px;&amp;quot;&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-        &amp;lt;img class=&amp;quot;img-responsive center-block&amp;quot; src=&amp;quot;/ckeditor_assets/pictures/13/content_picture_4.png&amp;quot; style=&amp;quot;height: 400px;&amp;quot;&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-        &amp;lt;img class=&amp;quot;img-responsive center-block&amp;quot; src=&amp;quot;/ckeditor_assets/pictures/11/content_picture_5.png&amp;quot; style=&amp;quot;height: 400px;&amp;quot;&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;
-        &amp;lt;img class=&amp;quot;img-responsive center-block&amp;quot; src=&amp;quot;/ckeditor_assets/pictures/10/content_picture_6.png&amp;quot; style=&amp;quot;height: 400px;&amp;quot;&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;a class=&amp;quot;left carousel-control&amp;quot; data-slide=&amp;quot;prev&amp;quot; href=&amp;quot;#myCarousel&amp;quot; role=&amp;quot;button&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;sr-only&amp;quot;&amp;gt;Previous&amp;lt;/span&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a class=&amp;quot;right carousel-control&amp;quot; data-slide=&amp;quot;next&amp;quot; href=&amp;quot;#myCarousel&amp;quot; role=&amp;quot;button&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;sr-only&amp;quot;&amp;gt;Next&amp;lt;/span&amp;gt; &amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Hal-cash finder searches terminal banks compatibles with &lt;a href=&#34;http://www.halcash.com/es&#34;&gt;Hal-cash&lt;/a&gt; method using Hal-cash API and render in Google Maps. This application is a hello world using Google Maps.&lt;/p&gt;
 
 &lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
 
@@ -70,6 +30,76 @@
 - &lt;strong&gt;With finger&lt;/strong&gt;: you can hold down the map and the application searches nearest terminal banks.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.devcows.hal_cash_finder&amp;amp;amp;hl=es&#34;&gt;GOOGLE PLAY&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;## Images&lt;/p&gt;
+
+&lt;p&gt;Main screen:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/hal-cash1.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;Lateral menu:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/hal-cash2.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;Searching ATMs:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/hal-cash3.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;Searching ATMs:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/hal-cash4.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;ATMs options:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/hal-cash5.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;Auto complete search box:
+
+&lt;figure class=&#34;img-responsive center-block&#34;&gt;
+    
+        &lt;img src=&#34;http://www.devcows.com/media/hal-cash6.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
 
 &lt;iframe frameborder=&#34;0&#34; height=&#34;450&#34; id=&#34;ytplayer&#34; src=&#34;http://www.youtube.com/embed/ULmzavHzv80&#34; type=&#34;text/html&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;
 
