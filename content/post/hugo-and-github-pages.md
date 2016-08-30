@@ -9,9 +9,9 @@ tags:
 
 ### Introduction
 
-Static site generators are becoming increasingly popular and many bloggers and website owners have already migrated to them. Not having a language-specific runtime like Python or PHP allows to basically anywhere you want. Moreover, it also reduces the attack surface since it's not a lot to hack in the server side since there is only static files (HTML, Javascript, CSS).
+Static site generators are becoming increasingly popular and many bloggers and website owners have already migrated to them. Not having a language-specific runtime like Python or PHP allows to basically run your website anywhere you want. Moreover, it also reduces the attack surface since there is not a lot to hack in the server side as there is only static files (HTML, Javascript, CSS).
 
-In this tutorial we are going to use Hugo, which is a popular static site generator written in Go, to create our blog. We are going to keep track of sources in GitHub and we will leverage their [Pages](https://pages.github.com/) feature to host and serve our blog for free. Finally, we will use Semaphore to automate the build and deployment processes, so that we only worry about editing our content in Markdown.
+In this tutorial we are going to use Hugo -a popular static site generator written in Go- to create our blog. We are going to keep track of sources in GitHub, leveraging their [Pages](https://pages.github.com/) feature to host and serve our blog for free. Finally, we will use Semaphore to automate the build and deployment processes, so that we only worry about editing our content in Markdown.
 
 This figure describes the final workflow after going through the tutorial.
 
@@ -31,7 +31,7 @@ By the end of this tutorial, you will learn:
 For this tutorial, you will need:
 
 * A basic knowledge of continuous integration systems and Git,
-* A [GitHub](https://github.com/) to which we will push our content, and
+* A [GitHub](https://github.com/) repo to which we will push our content, and
 * A [Semaphore](https://semaphoreci.com/) account where you will build and trigger the deployment of your blog.
 
 
