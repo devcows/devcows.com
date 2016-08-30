@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on DevCows</title>
-    <link>http://www.devcows.com/post/</link>
-    <description>Recent content in Posts on DevCows</description>
+    <title>Blogs on DevCows</title>
+    <link>http://www.devcows.com/blog/</link>
+    <description>Recent content in Blogs on DevCows</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright>
     <lastBuildDate>Tue, 26 Jan 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.devcows.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.devcows.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs</title>
-      <link>http://www.devcows.com/post/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</link>
+      <link>http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</link>
       <pubDate>Tue, 26 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</guid>
+      <guid>http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</guid>
       <description>&lt;p&gt;In this post we are going to create an IPsec VPN tunnel between two remote sites using Mikrotik routers with dynamic public IPs . By default, Mikrotik does not allow to use FQDN (domain names) to setup an IPsec tunnel, so we are going to create some scripts to update the IPsec configuration whenever the local or remote IPs change.&lt;/p&gt;
 
 &lt;p&gt;The network layout is as follows:&lt;/p&gt;
@@ -120,10 +120,10 @@
     
     <item>
       <title>Homemade ambilight with Arduino and Kodi</title>
-      <link>http://www.devcows.com/post/arduino-ambilight-xbmc/</link>
+      <link>http://www.devcows.com/blog/arduino-ambilight-xbmc/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/arduino-ambilight-xbmc/</guid>
+      <guid>http://www.devcows.com/blog/arduino-ambilight-xbmc/</guid>
       <description>
 
 &lt;p&gt;The Ambilight system is a gadget for TV to enjoy the TV shows. The system is composed by a concrete RGB LEDs (25 or 50 LEDs) and the LEDs reproduce the border color from TV. This post explains how create a homemade Ambilight system and connect to TV with &lt;a href=&#34;http://kodi.tv&#34;&gt;Kodi&lt;/a&gt;.&lt;/p&gt;
@@ -235,10 +235,10 @@
     
     <item>
       <title>Be sync with Raspberry Pi</title>
-      <link>http://www.devcows.com/post/be-in-sync-with-raspberry/</link>
+      <link>http://www.devcows.com/blog/be-in-sync-with-raspberry/</link>
       <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/be-in-sync-with-raspberry/</guid>
+      <guid>http://www.devcows.com/blog/be-in-sync-with-raspberry/</guid>
       <description>
 
 &lt;p&gt;Is very common have the necessity to sync some kind of information with other computers or have a synchronize backup. In this post we explain how to install &lt;a href=&#34;https://getsync.com&#34;&gt;Btsync&lt;/a&gt; into the Raspberry PI.&lt;/p&gt;
@@ -301,10 +301,10 @@ sudo update-rc.d btsync defaults
     
     <item>
       <title>CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI</title>
-      <link>http://www.devcows.com/post/connect-an-external-hdd-usb-to-raspberry/</link>
+      <link>http://www.devcows.com/blog/connect-an-external-hdd-usb-to-raspberry/</link>
       <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/connect-an-external-hdd-usb-to-raspberry/</guid>
+      <guid>http://www.devcows.com/blog/connect-an-external-hdd-usb-to-raspberry/</guid>
       <description>&lt;p&gt;In &lt;code&gt;Raspberry Pi B&lt;/code&gt; model by default is limiting the output amperage. We can trick this behavior editing the config file:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;vi /boot/config.txt
@@ -322,10 +322,10 @@ max_usb_current=1
     
     <item>
       <title>Update Deluge version on your Raspberry PI</title>
-      <link>http://www.devcows.com/post/update-deluge-version-on-your-raspberry-pi/</link>
+      <link>http://www.devcows.com/blog/update-deluge-version-on-your-raspberry-pi/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/update-deluge-version-on-your-raspberry-pi/</guid>
+      <guid>http://www.devcows.com/blog/update-deluge-version-on-your-raspberry-pi/</guid>
       <description>
 
 &lt;p&gt;Unfortunately, at the time of writing this post the latest version available from Raspbian repositories is 1.3.3. And you may not use other repositories since they will probably not provide packages for ARM devices such as the Raspberry PI.&lt;/p&gt;
@@ -538,10 +538,10 @@ sudo chmod 660 ~/.config/deluge/auth
     
     <item>
       <title>Meteodino monitoring temperature system</title>
-      <link>http://www.devcows.com/post/arduino-meteodino-temperature/</link>
+      <link>http://www.devcows.com/blog/arduino-meteodino-temperature/</link>
       <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/arduino-meteodino-temperature/</guid>
+      <guid>http://www.devcows.com/blog/arduino-meteodino-temperature/</guid>
       <description>
 
 &lt;p&gt;Meteodino is a personal project using Arduino and temperature and humidity sensor. The project challenge is build a gadget to measure the temperature and humidity and send these data to a server and to after analyze these data. This project combines &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_on_Rails&#34;&gt;Ruby on rails&lt;/a&gt;, &lt;a href=&#34;http://en.wikipedia.org/wiki/AngularJS&#34;&gt;AngularJS&lt;/a&gt;, &lt;a href=&#34;http://coffeescript.org&#34;&gt;Coffescript&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Arduino&#34;&gt;Arduino&lt;/a&gt;.&lt;/p&gt;
@@ -607,10 +607,10 @@ sudo chmod 660 ~/.config/deluge/auth
     
     <item>
       <title>Hal-cash finder (Android)</title>
-      <link>http://www.devcows.com/post/hal-cash-finder-android/</link>
+      <link>http://www.devcows.com/blog/hal-cash-finder-android/</link>
       <pubDate>Sat, 29 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/hal-cash-finder-android/</guid>
+      <guid>http://www.devcows.com/blog/hal-cash-finder-android/</guid>
       <description>
 
 &lt;p&gt;Hal-cash finder searches terminal banks compatibles with &lt;a href=&#34;http://www.halcash.com/es&#34;&gt;Hal-cash&lt;/a&gt; method using Hal-cash API and render in Google Maps. This application is a hello world using Google Maps.&lt;/p&gt;
@@ -712,10 +712,10 @@ sudo chmod 660 ~/.config/deluge/auth
     
     <item>
       <title>Manuncios opensource (Android)</title>
-      <link>http://www.devcows.com/post/manuncios-opensource-android/</link>
+      <link>http://www.devcows.com/blog/manuncios-opensource-android/</link>
       <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/manuncios-opensource-android/</guid>
+      <guid>http://www.devcows.com/blog/manuncios-opensource-android/</guid>
       <description>
 
 &lt;p&gt;Manuncios is a native android application that finds offers in &lt;a href=&#34;http://www.milanuncios.com&#34;&gt;Milanuncios.com&lt;/a&gt; web page. This application is my first Android application and it&amp;rsquo;s a Helloworld.&lt;/p&gt;

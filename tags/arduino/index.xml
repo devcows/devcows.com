@@ -12,10 +12,10 @@
     
     <item>
       <title>Homemade ambilight with Arduino and Kodi</title>
-      <link>http://www.devcows.com/post/arduino-ambilight-xbmc/</link>
+      <link>http://www.devcows.com/blog/arduino-ambilight-xbmc/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/arduino-ambilight-xbmc/</guid>
+      <guid>http://www.devcows.com/blog/arduino-ambilight-xbmc/</guid>
       <description>
 
 &lt;p&gt;The Ambilight system is a gadget for TV to enjoy the TV shows. The system is composed by a concrete RGB LEDs (25 or 50 LEDs) and the LEDs reproduce the border color from TV. This post explains how create a homemade Ambilight system and connect to TV with &lt;a href=&#34;http://kodi.tv&#34;&gt;Kodi&lt;/a&gt;.&lt;/p&gt;
@@ -127,10 +127,10 @@
     
     <item>
       <title>Meteodino monitoring temperature system</title>
-      <link>http://www.devcows.com/post/arduino-meteodino-temperature/</link>
+      <link>http://www.devcows.com/blog/arduino-meteodino-temperature/</link>
       <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/arduino-meteodino-temperature/</guid>
+      <guid>http://www.devcows.com/blog/arduino-meteodino-temperature/</guid>
       <description>
 
 &lt;p&gt;Meteodino is a personal project using Arduino and temperature and humidity sensor. The project challenge is build a gadget to measure the temperature and humidity and send these data to a server and to after analyze these data. This project combines &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_on_Rails&#34;&gt;Ruby on rails&lt;/a&gt;, &lt;a href=&#34;http://en.wikipedia.org/wiki/AngularJS&#34;&gt;AngularJS&lt;/a&gt;, &lt;a href=&#34;http://coffeescript.org&#34;&gt;Coffescript&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Arduino&#34;&gt;Arduino&lt;/a&gt;.&lt;/p&gt;

@@ -7,7 +7,7 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs</title>
+  <title>Meteodino monitoring temperature system</title>
 
   <meta name="author" content="" />
   <meta name="keywords" content="">
@@ -45,7 +45,7 @@
   <link rel="alternate" href="http://www.devcows.com/index.xml" type="application/rss+xml" title="DevCows">
 
   
-  <meta property="og:title" content="Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs" />
+  <meta property="og:title" content="Meteodino monitoring temperature system" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="/" />
   <meta property="og:image" content="media/devcows-logo.png" />
@@ -66,9 +66,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="http://www.devcows.com/">
-                    <img src="http://www.devcows.com/img/logo.png" alt="Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs logo" class="hidden-xs hidden-sm">
-                    <img src="http://www.devcows.com/img/logo-small.png" alt="Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs - go to homepage</span>
+                    <img src="http://www.devcows.com/img/logo.png" alt="Meteodino monitoring temperature system logo" class="hidden-xs hidden-sm">
+                    <img src="http://www.devcows.com/img/logo-small.png" alt="Meteodino monitoring temperature system logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Meteodino monitoring temperature system - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -87,7 +87,7 @@
                     </li>
                     
                     <li class="dropdown">
-                        <a href="http://www.devcows.com/post">Blog</a>
+                        <a href="http://www.devcows.com/blog">Blog</a>
                     </li>
                     
                     <li class="dropdown">
@@ -129,7 +129,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs</h1>
+                <h1>Meteodino monitoring temperature system</h1>
             </div>
         </div>
     </div>
@@ -145,108 +145,69 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Adrian Moreno</a> | January 26, 2016</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Guillermo Guerrero</a> | December 31, 2014</p>
 
                         <div id="post-content">
-                          <p>In this post we are going to create an IPsec VPN tunnel between two remote sites using Mikrotik routers with dynamic public IPs . By default, Mikrotik does not allow to use FQDN (domain names) to setup an IPsec tunnel, so we are going to create some scripts to update the IPsec configuration whenever the local or remote IPs change.</p>
+                          
 
-<p>The network layout is as follows:</p>
+<p>Meteodino is a personal project using Arduino and temperature and humidity sensor. The project challenge is build a gadget to measure the temperature and humidity and send these data to a server and to after analyze these data. This project combines <a href="http://en.wikipedia.org/wiki/Ruby_on_Rails">Ruby on rails</a>, <a href="http://en.wikipedia.org/wiki/AngularJS">AngularJS</a>, <a href="http://coffeescript.org">Coffescript</a> and <a href="http://en.wikipedia.org/wiki/Arduino">Arduino</a>.</p>
 
+<h2 id="making-of">Making-of</h2>
 
-<figure >
+<p>Mounting the gadget:
+
+<figure class="img-responsive center-block">
     
-        <img src="http://www.devcows.com/media/mikrotik-ipsec-1.png" alt="Mikrotik IPsec" />
-    
-    
-</figure>
-
-
-
-<p>The first thing to take into account is that LAN addresses must be different between Site 1 and Site 2. In our example, Site 1 uses LAN 192.168.1.0/24, whereas Site 2 uses 192.168.2.0/24. You can replace these networks with the ones in your infrastructure.</p>
-
-<p>Another thing to consider is if your routers are behind a NAT. In this case you will have to make sure to forward port 500 (UDP) to the Mikrotik router.</p>
-
-<p>In order to configure the IPsec tunnel, we have to setup the proposal, the peer, and the policy. We are going to provide the commands to configure Site 1, so once you finish with the guide, start over reverting the source and destination LAN addresses to configure Site 2.</p>
-
-<p>First, let’s create an IPsec proposal:</p>
-
-<pre><code>/ip ipsec proposal add name=proposal1 auth-algorithms=md5 enc-algorithms=3des pfs-group=modp1024 disabled=no
-</code></pre>
-
-<p>Now, let’s create the peer. Replace the “test” secret with whatever password you want to use. Leave the address as it is as we will update it later from a script.</p>
-
-<pre><code>/ip ipsec peer add address=10.0.0.2 port=500 auth-method=pre-shared-key secret=test send-initial-contact=yes nat-traversal=no proposal-check=obey hash-algorithm=md5 enc-algorithm=3des dh-group=modp1024 generate-policy=no comment=&quot;myIPsec&quot;
-</code></pre>
-
-<p>And, finally, let’s create a policy that will identify interesting traffic that should go through the IPsec tunnel. Again, let’s leave the “sa-src-address” and “sa-dst-address” as shown.</p>
-
-<pre><code>/ip ipsec policy add action=encrypt disabled=no src-address=192.168.1.0/24 dst-address=192.168.2.0/24 level=require ipsec-protocols=esp protocol=all tunnel=yes sa-src-address=10.0.0.1 sa-dst-address=10.0.0.2 proposal=proposal1 comment=&quot;myIPsec&quot;
-</code></pre>
-
-<p>The IPsec portion is now configured in Site 1. But we need to add a couple of NAT rules to accept the IPsec traffic.</p>
-
-<p>The following NAT rule will allow us to reach IPs on the remote LAN from our local network. It is important that this rule is placed in the first position.</p>
-
-<pre><code>/ip firewall nat add chain=srcnat src-address=192.168.1.0/24 dst-address=192.168.2.0/24 place-before=0 action=accept comment=&quot;IPsec traffic NAT bypass&quot;
-</code></pre>
-
-<p>Add also this rule If we do not already have a NAT rule to masquerade internal traffic.</p>
-
-<pre><code>/ip firewall nat add chain=srcnat src-address=192.168.1.0/24 place-before=1 action=masquerade comment=&quot;Masquerade internal network&quot;
-</code></pre>
-
-<p>Now, we need to create an account in a dynamic DNS service that will allow the remote site to always find out the other site’s public IP. In this guide we are using the No-IP.com service and provide scripts to update the IP of No-IP hosts. You are free to use whatever dynamic DNS service you want.</p>
-
-<p>Once you have created an account and a host for Site 1, go ahead and the following script to update the No-IP host and the IPsec policy in the event of an IP change.</p>
-
-<p>The script source is located here: <a href="https://gist.github.com/adrianmo/e54fbcd2c9d3cce80260">https://gist.github.com/adrianmo/e54fbcd2c9d3cce80260</a></p>
-
-<p>It may be more convenient to create the script from the UI, whether it is the web UI or Winbox. Enable “read”, “write”, and “test” policies, paste the script in the source field and replace the variables within the “Script Settings” section with your information. If you have followed the guide, leave the “IPsecComment” variable as it is. Replace the “WANInter” with the WAN interface that has the public IP of Site 1.</p>
-
-
-<figure >
-    
-        <img src="http://www.devcows.com/media/mikrotik-ipsec-2.png" alt="Mikrotik IPsec" />
+        <img src="http://www.devcows.com/media/meteodino1.jpg" alt="Meteodino1" />
     
     
 </figure>
 
+</p>
 
+<h1 id="gadget">Gadget</h1>
 
-<p>You can run the script manually and check the logs to verify whether the No-IP host and the IPsec policy are updated successfully.</p>
+<h2 id="server">Server</h2>
 
-<pre><code>/log print
-</code></pre>
+<ul>
+<li>API REST.</li>
+<li>Frontend with <a href="http://en.wikipedia.org/wiki/AngularJS">AngularJS</a>.</li>
+</ul>
 
-<p>Now we need to create an scheduler to run the script every time period. We considered that a 10 minute interval is quite balanced, but you can adjust it to your particular needs.</p>
+<h2 id="temperature-gadget-arduino">Temperature gadget =&gt; Arduino</h2>
 
-<pre><code>/system scheduler add disabled=no interval=10m name=no-ip_ddns_scheduler on-event=”no-ip_ddns_update” policy=read,write,test start-date=jan/01/1970 start-time=00:00:01
-</code></pre>
+<ul>
+<li>Arduino Uno: <a href="http://www.dx.com/p/uno-r3-atmega328p-uno-r3-development-board-deep-blue-285620#.VMk3V17F9TA">Link Dx</a></li>
+<li>Arduino Ethernet Shield: <a href="http://www.dx.com/p/ethernet-shield-v1-1-for-arduino-66908#.VMk3Tl7F9TA">Link Dx</a></li>
+<li>Temperature sensor (DHT-11): <a href="http://www.dx.com/p/arduino-digital-temperature-humidity-sensor-module-121350#.VMk3UV7F9TA">Link Dx</a> (Shit, very imprecise)</li>
+<li>Temperature sensor (DHT-22): <a href="http://www.dx.com/p/arduino-dht11-digital-temperature-humidity-sensor-138531">Link Dx</a></li>
+<li>LCD 16x2: <a href="http://www.dx.com/p/16-x-2-character-lcd-display-module-with-blue-backlight-121356#.VMk3c17F9TA">Link Dx</a></li>
+</ul>
 
-<p>At this point Site 1 No-IP host should update automatically whenever its public IP changes and will also update the IPsec policy accordingly. Now we need to update Site 2 public IP in the IPsec peer and policy configuration, so create a No-IP host for Site 2 if you don’t have it already. Do not worry about the IP that this host is resolving to, it will be updated in Site 2 when we repeat the steps on Site 2.</p>
+<h2 id="temperature-gadget-raspberry-pi-coming-soon">Temperature gadget =&gt; Raspberry pi (coming soon)</h2>
 
-<p>The script to update the IPsec peer and policy when Site 2 public IP changes can be found here: <a href="https://gist.github.com/adrianmo/92e305123b521b7a4400">https://gist.github.com/adrianmo/92e305123b521b7a4400</a></p>
+<ul>
+<li>Raspberry pi</li>
+<li>Temperature sensor (DHT-11): <a href="http://www.dx.com/p/arduino-digital-temperature-humidity-sensor-module-121350#.VMk3UV7F9TA">Link Dx</a> (Shit, very imprecise)</li>
+<li>Temperature sensor (DHT-22): <a href="http://www.dx.com/p/arduino-dht11-digital-temperature-humidity-sensor-138531">Link Dx</a></li>
+<li>LCD 16x2: <a href="http://www.dx.com/p/16-x-2-character-lcd-display-module-with-blue-backlight-121356#.VMk3c17F9TA">Link Dx</a></li>
+</ul>
 
-<p>Again, create a script from the UI and replace “RemoteNOIPHost” with the host name of Site 2.</p>
+<p>Demo at: <a href="http://meteodino.guerreroibarra.com">meteodino.guerreroibarra.com</a></p>
 
+<h2 id="remarks">Remarks </h2>
 
-<figure >
-    
-        <img src="http://www.devcows.com/media/mikrotik-ipsec-3.png" alt="Mikrotik IPsec" />
-    
-    
-</figure>
+<p>The web page is developed with <a href="http://en.wikipedia.org/wiki/Ruby_on_Rails">Ruby on Rails</a> and <a href="http://getbootstrap.com">Bootstrap</a>. The web uses some interesting gems, we will explain some:</p>
 
+<ul>
+<li><a href="http://activeadmin.info">Active Admin</a> generates a complete backoffice for manage the web site.</li>
+<li><a href="https://github.com/yuki24/did_you_mean">Did you mean</a></li>
+<li><a href="https://github.com/ctran/annotate_models">Annotate</a> add a comment summarizing the current schema to the top or bottom of each of your models.</li>
+<li><a href="https://github.com/voormedia/rails-erd">Rails erd</a> generates a class diagram.</li>
+<li><a href="https://github.com/bbatsov/rubocop">Rubocop</a> is a Ruby static code analyzer. Out of the box it will enforce many of the guidelines outlined in the community Ruby Style Guide.</li>
+</ul>
 
-
-<p>You can run the script manually and check the logs to verify that the IPsec peer and policy are updated successfully. For testing purposes, you can manually modify the IP from the No-IP control panel and verify that the script updates the IPsec configuration with the new IP.</p>
-
-<pre><code>/log print
-</code></pre>
-
-<p>We are now done with the configuration on Site 1, so it is time to move to Site 2 and go through it again configuring the IPs in the reverse order.</p>
-
-<p>If you feel so inclined, please let us know how it went and leave some feedback if you find it useful.</p>
+<p><a href="https://bitbucket.org/devcows/meteodino">GO TO REPOSITORY</a></p>
 
                         </div>
                         
@@ -255,9 +216,9 @@
                             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'devcows';
-    var disqus_identifier = 'http:\/\/www.devcows.com\/post\/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips\/';
-    var disqus_title = 'Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs';
-    var disqus_url = 'http:\/\/www.devcows.com\/post\/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips\/';
+    var disqus_identifier = 'http:\/\/www.devcows.com\/blog\/arduino-meteodino-temperature\/';
+    var disqus_title = 'Meteodino monitoring temperature system';
+    var disqus_url = 'http:\/\/www.devcows.com\/blog\/arduino-meteodino-temperature\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -413,6 +374,45 @@
 
             <div class="blog-entries">
                 
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/">
+                          
+                            <img src="http://www.devcows.com/media/mikrotik_ipsec.png" class="img-responsive" alt="">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/">Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="http://www.devcows.com/blog/arduino-ambilight-xbmc/">
+                          
+                            <img src="http://www.devcows.com/media/ambilight.jpg" class="img-responsive" alt="">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="http://www.devcows.com/blog/arduino-ambilight-xbmc/">Homemade ambilight with Arduino and Kodi</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="http://www.devcows.com/blog/be-in-sync-with-raspberry/">
+                          
+                            <img src="http://www.devcows.com/media/BTSync.png" class="img-responsive" alt="">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="http://www.devcows.com/blog/be-in-sync-with-raspberry/">Be sync with Raspberry Pi</a></h5>
+                    </div>
+                </div>
+                
             </div>
 
             <hr class="hidden-md hidden-lg">
@@ -477,6 +477,16 @@
     
 
     
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-57386726-1', 'auto');
+ga('send', 'pageview');
+</script>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 

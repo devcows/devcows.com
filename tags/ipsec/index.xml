@@ -12,10 +12,10 @@
     
     <item>
       <title>Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs</title>
-      <link>http://www.devcows.com/post/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</link>
+      <link>http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</link>
       <pubDate>Tue, 26 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</guid>
+      <guid>http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/</guid>
       <description>&lt;p&gt;In this post we are going to create an IPsec VPN tunnel between two remote sites using Mikrotik routers with dynamic public IPs . By default, Mikrotik does not allow to use FQDN (domain names) to setup an IPsec tunnel, so we are going to create some scripts to update the IPsec configuration whenever the local or remote IPs change.&lt;/p&gt;
 
 &lt;p&gt;The network layout is as follows:&lt;/p&gt;
@@ -120,10 +120,10 @@
     
     <item>
       <title>Be sync with Raspberry Pi</title>
-      <link>http://www.devcows.com/post/be-in-sync-with-raspberry/</link>
+      <link>http://www.devcows.com/blog/be-in-sync-with-raspberry/</link>
       <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/be-in-sync-with-raspberry/</guid>
+      <guid>http://www.devcows.com/blog/be-in-sync-with-raspberry/</guid>
       <description>
 
 &lt;p&gt;Is very common have the necessity to sync some kind of information with other computers or have a synchronize backup. In this post we explain how to install &lt;a href=&#34;https://getsync.com&#34;&gt;Btsync&lt;/a&gt; into the Raspberry PI.&lt;/p&gt;

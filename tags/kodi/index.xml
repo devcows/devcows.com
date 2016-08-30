@@ -12,10 +12,10 @@
     
     <item>
       <title>Homemade ambilight with Arduino and Kodi</title>
-      <link>http://www.devcows.com/post/arduino-ambilight-xbmc/</link>
+      <link>http://www.devcows.com/blog/arduino-ambilight-xbmc/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/arduino-ambilight-xbmc/</guid>
+      <guid>http://www.devcows.com/blog/arduino-ambilight-xbmc/</guid>
       <description>
 
 &lt;p&gt;The Ambilight system is a gadget for TV to enjoy the TV shows. The system is composed by a concrete RGB LEDs (25 or 50 LEDs) and the LEDs reproduce the border color from TV. This post explains how create a homemade Ambilight system and connect to TV with &lt;a href=&#34;http://kodi.tv&#34;&gt;Kodi&lt;/a&gt;.&lt;/p&gt;

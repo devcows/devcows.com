@@ -12,10 +12,10 @@
     
     <item>
       <title>CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI</title>
-      <link>http://www.devcows.com/post/connect-an-external-hdd-usb-to-raspberry/</link>
+      <link>http://www.devcows.com/blog/connect-an-external-hdd-usb-to-raspberry/</link>
       <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/connect-an-external-hdd-usb-to-raspberry/</guid>
+      <guid>http://www.devcows.com/blog/connect-an-external-hdd-usb-to-raspberry/</guid>
       <description>&lt;p&gt;In &lt;code&gt;Raspberry Pi B&lt;/code&gt; model by default is limiting the output amperage. We can trick this behavior editing the config file:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;vi /boot/config.txt

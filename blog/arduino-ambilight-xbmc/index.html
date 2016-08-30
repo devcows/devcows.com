@@ -7,7 +7,7 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Hal-cash finder (Android)</title>
+  <title>Homemade ambilight with Arduino and Kodi</title>
 
   <meta name="author" content="" />
   <meta name="keywords" content="">
@@ -45,7 +45,7 @@
   <link rel="alternate" href="http://www.devcows.com/index.xml" type="application/rss+xml" title="DevCows">
 
   
-  <meta property="og:title" content="Hal-cash finder (Android)" />
+  <meta property="og:title" content="Homemade ambilight with Arduino and Kodi" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="/" />
   <meta property="og:image" content="media/devcows-logo.png" />
@@ -66,9 +66,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="http://www.devcows.com/">
-                    <img src="http://www.devcows.com/img/logo.png" alt="Hal-cash finder (Android) logo" class="hidden-xs hidden-sm">
-                    <img src="http://www.devcows.com/img/logo-small.png" alt="Hal-cash finder (Android) logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Hal-cash finder (Android) - go to homepage</span>
+                    <img src="http://www.devcows.com/img/logo.png" alt="Homemade ambilight with Arduino and Kodi logo" class="hidden-xs hidden-sm">
+                    <img src="http://www.devcows.com/img/logo-small.png" alt="Homemade ambilight with Arduino and Kodi logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Homemade ambilight with Arduino and Kodi - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -87,7 +87,7 @@
                     </li>
                     
                     <li class="dropdown">
-                        <a href="http://www.devcows.com/post">Blog</a>
+                        <a href="http://www.devcows.com/blog">Blog</a>
                     </li>
                     
                     <li class="dropdown">
@@ -129,7 +129,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Hal-cash finder (Android)</h1>
+                <h1>Homemade ambilight with Arduino and Kodi</h1>
             </div>
         </div>
     </div>
@@ -145,105 +145,115 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Guillermo Guerrero</a> | November 29, 2014</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Guillermo Guerrero</a> | January 15, 2016</p>
 
                         <div id="post-content">
                           
 
-<p>Hal-cash finder searches terminal banks compatibles with <a href="http://www.halcash.com/es">Hal-cash</a> method using Hal-cash API and render in Google Maps. This application is a hello world using Google Maps.</p>
+<p>The Ambilight system is a gadget for TV to enjoy the TV shows. The system is composed by a concrete RGB LEDs (25 or 50 LEDs) and the LEDs reproduce the border color from TV. This post explains how create a homemade Ambilight system and connect to TV with <a href="http://kodi.tv">Kodi</a>.</p>
 
-<h2 id="description">Description</h2>
-
-<p>Hal-cash finder is an application that searches terminal banks compatibles with Hal-cash method nearest your position.</p>
-
-<p>With this application, you can do:
-- <strong>With your position</strong>: the application searches terminal banks automatically nearest your position.
-- <strong>With an address</strong>: you can put an address and the application finds terminal banks nearest.
-- <strong>With finger</strong>: you can hold down the map and the application searches nearest terminal banks.</p>
-
-<p><a href="https://play.google.com/store/apps/details?id=com.devcows.hal_cash_finder&amp;amp;hl=es">GOOGLE PLAY</a></p>
-
-<p>## Images</p>
-
-<p>Main screen:
-
-<figure class="img-responsive center-block">
-    
-        <img src="http://www.devcows.com/media/hal-cash1.png"  />
-    
-    
-</figure>
-
-</p>
-
-<p>Lateral menu:
-
-<figure class="img-responsive center-block">
-    
-        <img src="http://www.devcows.com/media/hal-cash2.png"  />
-    
-    
-</figure>
-
-</p>
-
-<p>Searching ATMs:
-
-<figure class="img-responsive center-block">
-    
-        <img src="http://www.devcows.com/media/hal-cash3.png"  />
-    
-    
-</figure>
-
-</p>
-
-<p>Searching ATMs:
-
-<figure class="img-responsive center-block">
-    
-        <img src="http://www.devcows.com/media/hal-cash4.png"  />
-    
-    
-</figure>
-
-</p>
-
-<p>ATMs options:
-
-<figure class="img-responsive center-block">
-    
-        <img src="http://www.devcows.com/media/hal-cash5.png"  />
-    
-    
-</figure>
-
-</p>
-
-<p>Auto complete search box:
-
-<figure class="img-responsive center-block">
-    
-        <img src="http://www.devcows.com/media/hal-cash6.png"  />
-    
-    
-</figure>
-
-</p>
-
-<h2 id="demo">Demo</h2>
-
-<iframe frameborder="0" height="450" id="ytplayer" src="http://www.youtube.com/embed/ULmzavHzv80" type="text/html" width="100%"></iframe>
-
-<h2 id="remarks">Remarks</h2>
-
-<p>This application uses libraries and implements different design patterns, for example:</p>
+<h2 id="components">Components</h2>
 
 <ul>
-<li><p><a href="https://github.com/stephanenicolas/robospice">Robospice</a>: This library implements asynchronous network request. Parses the JSON response to java classes.</p></li>
-
-<li><p>Design patterns: <a href="https://en.wikipedia.org/wiki/Observer_pattern">Observer</a> and <a href="http://en.wikipedia.org/wiki/Singleton_pattern">Singleton</a></p></li>
+<li>50 LEDS =&gt; 2 x [12mm Diffused Thin Digital RGB LED Pixels (Strand of 25) - WS2801]: <a href="http://www.ebay.es/itm/12mm-Round-5V-Digital-RGB-LED-Pixels-Strand-of-50-WS2801-Waterproof-IP65-/161453014817?pt=UK_Computing_Other_Computing_Networking&amp;amp;hash=item2597597f21">Link Ebay</a></li>
+<li>Arduino uno: <a href="http://www.dx.com/p/uno-r3-atmega328p-uno-r3-development-board-deep-blue-285620">Link Dx</a></li>
+<li>Male + Female DC Power Converter Connector Adapters (Optional to connect leds): <a href="http://www.dx.com/p/male-female-dc-power-converter-connector-adapters-w-terminal-blocks-for-cctv-camera-pair-105084#.VLwoWC7F9TA">Link Dx</a></li>
+<li>5V 2A Power Adapter Charger: <a href="http://www.dx.com/p/5v-2a-power-adapter-charger-for-security-camera-scanner-black-5-5-x-2-1mm-eu-plug-159396#.VLwo2C7F9TA">Link Dx</a></li>
 </ul>
+
+<p>Total price: 100€ (approximately)</p>
+
+<h2 id="connection-schema">Connection_schema</h2>
+
+
+<figure class="img-responsive center-block">
+    
+        <img src="http://www.devcows.com/media/ambilight_wiring-diagram.png" alt="Ambilight5" />
+    
+    
+</figure>
+
+
+
+<h2 id="making-of">Making_of</h2>
+
+<ol>
+  <li>
+    <p>
+      Soldering the array of 25 LEDs in one. After test the array:<br />
+      
+<figure class="img-responsive center-block">
+    
+        <img src="http://www.devcows.com/media/ambilight1.png" alt="Ambilight1" />
+    
+    
+</figure>
+
+
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Prepare back LED support with TV shape (VESA and connectors). Fix LEDs in the support.<br />
+      
+<figure class="img-responsive center-block">
+    
+        <img src="http://www.devcows.com/media/ambilight2.png" alt="Ambilight2" />
+    
+    
+</figure>
+
+
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Install the LED support on TV back (VESA).<br />
+      
+<figure class="img-responsive center-block">
+    
+        <img src="http://www.devcows.com/media/ambilight3.png" alt="Ambilight3" />
+    
+    
+</figure>
+
+
+
+      <br />
+      <br />
+
+      
+<figure class="img-responsive center-block">
+    
+        <img src="http://www.devcows.com/media/ambilight4.png" alt="Ambilight4" />
+    
+    
+</figure>
+
+
+    </p>
+  </li>
+</ol>
+
+<h2 id="software">Software</h2>
+
+<ul>
+<li><a href="http://kodi.tv/download">Kodi</a></li>
+<li><a href="http://kodi.wiki/view/Add-on:XBMC_Boblight">Boblight Xbmc</a></li>
+<li><a href="https://code.google.com/p/boblight">Boblight Service</a></li>
+<li><a href="https://learn.adafruit.com/adalight-diy-ambient-tv-lighting/download-and-install">Arduino code</a></li>
+<li><a href="http://www.tweaking4all.com/home-theatre/xbmc/boblight-config-maker">Boblight config maker</a></li>
+</ul>
+
+<h2 id="demos">Demos</h2>
+
+<p>Video 1:
+<iframe frameborder="0" height="450" id="ytplayer" src="http://www.youtube.com/embed/QiZHNcrvsQw" type="text/html" width="100%"></iframe></p>
+
+<p>Video 2:
+<iframe frameborder="0" height="450" id="ytplayer" src="http://www.youtube.com/embed/eNhAsUhEIEE" type="text/html" width="100%"></iframe></p>
 
                         </div>
                         
@@ -252,9 +262,9 @@
                             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'devcows';
-    var disqus_identifier = 'http:\/\/www.devcows.com\/post\/hal-cash-finder-android\/';
-    var disqus_title = 'Hal-cash finder (Android)';
-    var disqus_url = 'http:\/\/www.devcows.com\/post\/hal-cash-finder-android\/';
+    var disqus_identifier = 'http:\/\/www.devcows.com\/blog\/arduino-ambilight-xbmc\/';
+    var disqus_title = 'Homemade ambilight with Arduino and Kodi';
+    var disqus_url = 'http:\/\/www.devcows.com\/blog\/arduino-ambilight-xbmc\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -410,6 +420,45 @@
 
             <div class="blog-entries">
                 
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/">
+                          
+                            <img src="http://www.devcows.com/media/mikrotik_ipsec.png" class="img-responsive" alt="">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/">Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="http://www.devcows.com/blog/arduino-ambilight-xbmc/">
+                          
+                            <img src="http://www.devcows.com/media/ambilight.jpg" class="img-responsive" alt="">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="http://www.devcows.com/blog/arduino-ambilight-xbmc/">Homemade ambilight with Arduino and Kodi</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="http://www.devcows.com/blog/be-in-sync-with-raspberry/">
+                          
+                            <img src="http://www.devcows.com/media/BTSync.png" class="img-responsive" alt="">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="http://www.devcows.com/blog/be-in-sync-with-raspberry/">Be sync with Raspberry Pi</a></h5>
+                    </div>
+                </div>
+                
             </div>
 
             <hr class="hidden-md hidden-lg">
@@ -474,6 +523,16 @@
     
 
     
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-57386726-1', 'auto');
+ga('send', 'pageview');
+</script>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 

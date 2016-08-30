@@ -12,10 +12,10 @@
     
     <item>
       <title>Meteodino monitoring temperature system</title>
-      <link>http://www.devcows.com/post/arduino-meteodino-temperature/</link>
+      <link>http://www.devcows.com/blog/arduino-meteodino-temperature/</link>
       <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.devcows.com/post/arduino-meteodino-temperature/</guid>
+      <guid>http://www.devcows.com/blog/arduino-meteodino-temperature/</guid>
       <description>
 
 &lt;p&gt;Meteodino is a personal project using Arduino and temperature and humidity sensor. The project challenge is build a gadget to measure the temperature and humidity and send these data to a server and to after analyze these data. This project combines &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_on_Rails&#34;&gt;Ruby on rails&lt;/a&gt;, &lt;a href=&#34;http://en.wikipedia.org/wiki/AngularJS&#34;&gt;AngularJS&lt;/a&gt;, &lt;a href=&#34;http://coffeescript.org&#34;&gt;Coffescript&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Arduino&#34;&gt;Arduino&lt;/a&gt;.&lt;/p&gt;
