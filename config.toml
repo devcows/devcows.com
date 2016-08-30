@@ -92,12 +92,12 @@ paginate = 10
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
 [params.see_more]
-    enable = false
-    icon = "fa fa-file-code-o"
-    title = "Do you want to see less?"
-    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
-    link_url = "#"
-    link_text = "Check other homepages"
+    enable = true
+    icon = "fa fa-file-text-o"
+    title = "Do you want to know more?"
+    subtitle = "Whether you have a business idea or just want to know more about our offerings, we are willing to hear from you."
+    link_url = "/contact"
+    link_text = "Contact Us"
 
 [params.clients]
     enable = true
