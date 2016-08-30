@@ -1,7 +1,7 @@
 baseurl = "http://www.devcows.com/"
 languageCode = "en-us"
 title = "DevCows"
-theme = "universal"
+theme = "hugo-universal-theme"
 MetaDataFormat = "yaml"
 copyright = "Copyright (c) 2015 - 2016, DevCows; all rights reserved."
 
@@ -9,12 +9,13 @@ copyright = "Copyright (c) 2015 - 2016, DevCows; all rights reserved."
 disqusShortname = "devcows"
 
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-57386726-1"
 
 # Define the number of posts per page
 paginate = 10
 
 [params]
+    viewMorePostLink     = "/blog/"
     author = "DevCows"
 
     # Since this template is static, the contact form uses www.formspree.io as a
@@ -53,7 +54,7 @@ paginate = 10
 
 [[params.menu]]
     name = "Blog"
-    url  = "/post"
+    url  = "/blog"
     weight = 2
 
 [[params.menu]]
@@ -63,12 +64,6 @@ paginate = 10
 
 [social]
     github = "devcows"
-
-[params.contact]
-    map = true
-    mapLat = 41.1333037
-    mapLng = 1.2467193
-    mapTitle = "DevCows"
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
@@ -97,7 +92,7 @@ paginate = 10
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
 [params.see_more]
-    enable = true
+    enable = false
     icon = "fa fa-file-code-o"
     title = "Do you want to see less?"
     subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
@@ -115,4 +110,4 @@ paginate = 10
 [params.recent_posts]
     enable = true
     title = "From our blog"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    subtitle = ""
