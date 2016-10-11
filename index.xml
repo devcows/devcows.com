@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DevCows</title>
-    <link>http://www.devcows.com/</link>
+    <link>http://www.devcows.com/index.xml</link>
     <description>Recent content on DevCows</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
