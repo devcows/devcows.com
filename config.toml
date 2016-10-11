@@ -46,6 +46,8 @@ paginate = 10
         <strong>Spain</strong>
       </p>
       """
+    latitude = "41.133373"
+    longitude = "1.246667"
 
 [[params.menu]]
     name = "Home"
