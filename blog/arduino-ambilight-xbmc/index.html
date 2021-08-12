@@ -1,553 +1,303 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-  <meta charset="utf-8">
-  <meta name="robots" content="all,follow">
-  <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Homemade ambilight with Arduino and Kodi</title>
-
-  <meta name="author" content="" />
-  <meta name="keywords" content="">
-
-  
-
-  <meta name="generator" content="Hugo 0.18-DEV" />
-
-  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
-
-  
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-  
-  <link href="http://www.devcows.com/css/animate.css" rel="stylesheet">
-
-  
-  <link href="http://www.devcows.com/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
-
-  
-  <link href="http://www.devcows.com/css/custom.css" rel="stylesheet">
-
-  
-    
-
-  
-  <link rel="shortcut icon" href="http://www.devcows.com/img/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="http://www.devcows.com/img/apple-touch-icon.png" />
-  
-
-  <link href="http://www.devcows.com/css/owl.carousel.css" rel="stylesheet">
-  <link href="http://www.devcows.com/css/owl.theme.css" rel="stylesheet">
-
-  <link rel="alternate" href="http://www.devcows.com/index.xml" type="application/rss+xml" title="DevCows">
-
-  
-  <meta property="og:title" content="Homemade ambilight with Arduino and Kodi" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="/blog/arduino-ambilight-xbmc//" />
-  <meta property="og:image" content="media/devcows-logo.png" />
-
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=robots content="all,follow">
+<meta name=googlebot content="index,follow,snippet,archive">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Homemade ambilight with Arduino and Kodi</title>
+<meta name=author content="Guillermo Guerrero">
+<meta name=keywords content="ambilight,arduino,xbmc,kodi">
+<meta name=description content>
+<meta name=generator content="Hugo 0.87.0">
+<link href="//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800" rel=stylesheet type=text/css>
+<link rel=stylesheet href=//use.fontawesome.com/releases/v5.11.2/css/all.css>
+<link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css integrity=sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u crossorigin=anonymous>
+<link href=/css/animate.css rel=stylesheet>
+<link href=/css/style.default.css rel=stylesheet id=theme-stylesheet>
+<link href=/css/custom.css rel=stylesheet><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script>
+<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]-->
+<link rel="shortcut icon" href=/img/favicon.ico type=image/x-icon>
+<link rel=apple-touch-icon href=/img/apple-touch-icon.png>
+<link href=/css/owl.carousel.css rel=stylesheet>
+<link href=/css/owl.theme.css rel=stylesheet>
+<link rel=alternate href=http://www.devcows.com/index.xml type=application/rss+xml title=DevCows>
+<meta property="og:locale" content="en_us">
+<meta property="og:site_name" content="DevCows">
+<meta property="og:title" content="Homemade ambilight with Arduino and Kodi">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.devcows.com/blog/arduino-ambilight-xbmc/">
+<meta property="og:description" content>
+<meta property="og:image" content="http://www.devcows.com/media/ambilight.jpg">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:width" content="889">
+<meta property="og:image:height" content="500">
+<meta property="og:updated_time" content="2016-01-15T00:00:00Z">
+<meta property="article:tag" content="ambilight">
+<meta property="article:tag" content="arduino">
+<meta property="article:tag" content="xbmc">
+<meta property="article:tag" content="kodi">
+<meta property="article:published_time" content="2016-01-15T00:00:00Z">
+<meta property="article:modified_time" content="2016-01-15T00:00:00Z">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="Homemade ambilight with Arduino and Kodi">
+<meta name=twitter:image content="http://www.devcows.com/media/ambilight.jpg">
+<meta name=twitter:description content>
 </head>
-
-
-  <body>
-
-    <div id="all">
-
-        <header>
-
-          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
-
-    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
-
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand home" href="http://www.devcows.com/">
-                    <img src="http://www.devcows.com/img/logo.png" alt="Homemade ambilight with Arduino and Kodi logo" class="hidden-xs hidden-sm">
-                    <img src="http://www.devcows.com/img/logo-small.png" alt="Homemade ambilight with Arduino and Kodi logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Homemade ambilight with Arduino and Kodi - go to homepage</span>
-                </a>
-                <div class="navbar-buttons">
-                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-align-justify"></i>
-                    </button>
-                </div>
-            </div>
-            
-
-            <div class="navbar-collapse collapse" id="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                    
-                    <li class="dropdown">
-                        <a href="/">Home</a>
-                    </li>
-                    
-                    <li class="dropdown">
-                        <a href="/blog">Blog</a>
-                    </li>
-                    
-                    <li class="dropdown">
-                        <a href="/contact">Contact</a>
-                    </li>
-                    
-                </ul>
-            </div>
-            
-
-            <div class="collapse clearfix" id="search">
-
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-
-                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
-
-                </span>
-                    </div>
-                </form>
-
-            </div>
-            
-
-        </div>
-    </div>
-    
-
+<body>
+<div id=all>
+<header class=navbar-affixed-top data-spy=affix data-offset-top=62>
+<div class="navbar navbar-default yamm" role=navigation id=navbar>
+<div class=container>
+<div class=navbar-header>
+<a class="navbar-brand home" href=/>
+<img src=/media/devcows-logo.png alt="Homemade ambilight with Arduino and Kodi logo" class="hidden-xs hidden-sm">
+<img src=/ alt="Homemade ambilight with Arduino and Kodi logo" class="visible-xs visible-sm">
+<span class=sr-only>Homemade ambilight with Arduino and Kodi - go to homepage</span>
+</a>
+<div class=navbar-buttons>
+<button type=button class="navbar-toggle btn-template-main" data-toggle=collapse data-target=#navigation>
+<span class=sr-only>Toggle Navigation</span>
+<i class="fas fa-align-justify"></i>
+</button>
 </div>
-
-
-
-
-        </header>
-
-        <div id="heading-breadcrumbs">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Homemade ambilight with Arduino and Kodi</h1>
-            </div>
-        </div>
-    </div>
 </div>
-
-
-        <div id="content">
-            <div class="container">
-
-                <div class="row">
-
-                    
-
-                    <div class="col-md-9" id="blog-post">
-
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Guillermo Guerrero</a> | January 15, 2016</p>
-
-                        <div id="post-content">
-                          
-
-<p>The Ambilight system is a gadget for TV to enjoy the TV shows. The system is composed by a concrete RGB LEDs (25 or 50 LEDs) and the LEDs reproduce the border color from TV. This post explains how create a homemade Ambilight system and connect to TV with <a href="http://kodi.tv">Kodi</a>.</p>
-
-<h2 id="components">Components</h2>
-
-<ul>
-<li>50 LEDS =&gt; 2 x [12mm Diffused Thin Digital RGB LED Pixels (Strand of 25) - WS2801]: <a href="http://www.ebay.es/itm/12mm-Round-5V-Digital-RGB-LED-Pixels-Strand-of-50-WS2801-Waterproof-IP65-/161453014817?pt=UK_Computing_Other_Computing_Networking&amp;amp;hash=item2597597f21">Link Ebay</a></li>
-<li>Arduino uno: <a href="http://www.dx.com/p/uno-r3-atmega328p-uno-r3-development-board-deep-blue-285620">Link Dx</a></li>
-<li>Male + Female DC Power Converter Connector Adapters (Optional to connect leds): <a href="http://www.dx.com/p/male-female-dc-power-converter-connector-adapters-w-terminal-blocks-for-cctv-camera-pair-105084#.VLwoWC7F9TA">Link Dx</a></li>
-<li>5V 2A Power Adapter Charger: <a href="http://www.dx.com/p/5v-2a-power-adapter-charger-for-security-camera-scanner-black-5-5-x-2-1mm-eu-plug-159396#.VLwo2C7F9TA">Link Dx</a></li>
+<div class="navbar-collapse collapse" id=navigation>
+<ul class="nav navbar-nav navbar-right">
 </ul>
-
+</div>
+<div class="collapse clearfix" id=search>
+<form class=navbar-form role=search>
+<div class=input-group>
+<input type=text class=form-control placeholder=Search>
+<span class=input-group-btn>
+<button type=submit class="btn btn-template-main"><i class="fas fa-search"></i></button>
+</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</header>
+<div id=heading-breadcrumbs>
+<div class=container>
+<div class=row>
+<div class=col-md-12>
+<h1>Homemade ambilight with Arduino and Kodi</h1>
+</div>
+</div>
+</div>
+</div>
+<div id=content>
+<div class=container>
+<div class=row>
+<div class=col-md-9 id=blog-post>
+<p class="text-muted text-uppercase mb-small text-right">
+|
+2016-01-15
+</p>
+<div id=post-content>
+<p>The Ambilight system is a gadget for TV to enjoy the TV shows. The system is composed by a concrete RGB LEDs (25 or 50 LEDs) and the LEDs reproduce the border color from TV. This post explains how create a homemade Ambilight system and connect to TV with <a href=http://kodi.tv>Kodi</a>.</p>
+<h2 id=components>Components</h2>
+<ul>
+<li>50 LEDS => 2 x [12mm Diffused Thin Digital RGB LED Pixels (Strand of 25) - WS2801]: <a href="http://www.ebay.es/itm/12mm-Round-5V-Digital-RGB-LED-Pixels-Strand-of-50-WS2801-Waterproof-IP65-/161453014817?pt=UK_Computing_Other_Computing_Networking&hash=item2597597f21">Link Ebay</a></li>
+<li>Arduino uno: <a href=http://www.dx.com/p/uno-r3-atmega328p-uno-r3-development-board-deep-blue-285620>Link Dx</a></li>
+<li>Male + Female DC Power Converter Connector Adapters (Optional to connect leds): <a href=http://www.dx.com/p/male-female-dc-power-converter-connector-adapters-w-terminal-blocks-for-cctv-camera-pair-105084#.VLwoWC7F9TA>Link Dx</a></li>
+<li>5V 2A Power Adapter Charger: <a href=http://www.dx.com/p/5v-2a-power-adapter-charger-for-security-camera-scanner-black-5-5-x-2-1mm-eu-plug-159396#.VLwo2C7F9TA>Link Dx</a></li>
+</ul>
 <p>Total price: 100€ (approximately)</p>
-
-<h2 id="connection-schema">Connection_schema</h2>
-
-
-<figure class="img-responsive center-block">
-    
-        <img src="http://www.devcows.com/media/ambilight_wiring-diagram.png" alt="Ambilight5" />
-    
-    
-</figure>
-
-
-
-<h2 id="making-of">Making_of</h2>
-
-<ol>
-  <li>
-    <p>
-      Soldering the array of 25 LEDs in one. After test the array:<br />
-      
-<figure class="img-responsive center-block">
-    
-        <img src="http://www.devcows.com/media/ambilight1.png" alt="Ambilight1" />
-    
-    
-</figure>
-
-
-    </p>
-  </li>
-
-  <li>
-    <p>
-      Prepare back LED support with TV shape (VESA and connectors). Fix LEDs in the support.<br />
-      
-<figure class="img-responsive center-block">
-    
-        <img src="http://www.devcows.com/media/ambilight2.png" alt="Ambilight2" />
-    
-    
-</figure>
-
-
-    </p>
-  </li>
-
-  <li>
-    <p>
-      Install the LED support on TV back (VESA).<br />
-      
-<figure class="img-responsive center-block">
-    
-        <img src="http://www.devcows.com/media/ambilight3.png" alt="Ambilight3" />
-    
-    
-</figure>
-
-
-
-      <br />
-      <br />
-
-      
-<figure class="img-responsive center-block">
-    
-        <img src="http://www.devcows.com/media/ambilight4.png" alt="Ambilight4" />
-    
-    
-</figure>
-
-
-    </p>
-  </li>
-</ol>
-
-<h2 id="software">Software</h2>
-
+<h2 id=connection_schema>Connection_schema</h2>
+<pre><code>    &lt;img src=&quot;http://www.devcows.com/media/ambilight_wiring-diagram.png&quot; alt=&quot;Ambilight5&quot; /&gt;
+</code></pre>
+<h2 id=making_of>Making_of</h2>
+<pre><code>    &lt;img src=&quot;http://www.devcows.com/media/ambilight1.png&quot; alt=&quot;Ambilight1&quot; /&gt;
+</code></pre>
+<pre><code>&lt;/p&gt;
+</code></pre>
+<pre><code>    &lt;img src=&quot;http://www.devcows.com/media/ambilight2.png&quot; alt=&quot;Ambilight2&quot; /&gt;
+</code></pre>
+<pre><code>&lt;/p&gt;
+</code></pre>
+<pre><code>    &lt;img src=&quot;http://www.devcows.com/media/ambilight3.png&quot; alt=&quot;Ambilight3&quot; /&gt;
+</code></pre>
+<pre><code>  &lt;br /&gt;
+  &lt;br /&gt;
+</code></pre>
+<pre><code>    &lt;img src=&quot;http://www.devcows.com/media/ambilight4.png&quot; alt=&quot;Ambilight4&quot; /&gt;
+</code></pre>
+<pre><code>&lt;/p&gt;
+</code></pre>
+<h2 id=software>Software</h2>
 <ul>
-<li><a href="http://kodi.tv/download">Kodi</a></li>
-<li><a href="http://kodi.wiki/view/Add-on:XBMC_Boblight">Boblight Xbmc</a></li>
-<li><a href="https://code.google.com/p/boblight">Boblight Service</a></li>
-<li><a href="https://learn.adafruit.com/adalight-diy-ambient-tv-lighting/download-and-install">Arduino code</a></li>
-<li><a href="http://www.tweaking4all.com/home-theatre/xbmc/boblight-config-maker">Boblight config maker</a></li>
+<li><a href=http://kodi.tv/download>Kodi</a></li>
+<li><a href=http://kodi.wiki/view/Add-on:XBMC_Boblight>Boblight Xbmc</a></li>
+<li><a href=https://code.google.com/p/boblight>Boblight Service</a></li>
+<li><a href=https://learn.adafruit.com/adalight-diy-ambient-tv-lighting/download-and-install>Arduino code</a></li>
+<li><a href=http://www.tweaking4all.com/home-theatre/xbmc/boblight-config-maker>Boblight config maker</a></li>
 </ul>
-
-<h2 id="demos">Demos</h2>
-
-<p>Video 1:
-<iframe frameborder="0" height="450" id="ytplayer" src="http://www.youtube.com/embed/QiZHNcrvsQw" type="text/html" width="100%"></iframe></p>
-
-<p>Video 2:
-<iframe frameborder="0" height="450" id="ytplayer" src="http://www.youtube.com/embed/eNhAsUhEIEE" type="text/html" width="100%"></iframe></p>
-
-                        </div>
-                        
-                        
-                        <div id="comments">
-                            <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'devcows';
-    var disqus_identifier = 'http:\/\/www.devcows.com\/blog\/arduino-ambilight-xbmc\/';
-    var disqus_title = 'Homemade ambilight with Arduino and Kodi';
-    var disqus_url = 'http:\/\/www.devcows.com\/blog\/arduino-ambilight-xbmc\/';
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-                        </div>
-                        
-
-                    </div>
-                    
-
-                    
-
-                    
-
-                    <div class="col-md-3">
-
-                        
-
-                        
-
+<h2 id=demos>Demos</h2>
+<p>Video 1:</p>
+<p>Video 2:</p>
+</div>
+<div id=comments>
+<div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//devcows.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</div>
+</div>
+<div class=col-md-3>
 <div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">Search</h3>
-    </div>
-
-    <div class="panel-body">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
-            <div class="input-group">
-                <input type="search" name="q" results="0" class="form-control" placeholder="Search">
-                <input type="hidden" name="q" value="site:http://www.devcows.com/">
-                <span class="input-group-btn">
-                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
-                </span>
-            </div>
-        </form>
-    </div>
+<div class=panel-heading>
+<h3 class=panel-title>Search</h3>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class=panel-body>
+<form action=//google.com/search method=get accept-charset=utf-8 role=search>
+<div class=input-group>
+<input type=search name=q class=form-control placeholder=Search>
+<input type=hidden name=sitesearch value=http://www.devcows.com/>
+<span class=input-group-btn>
+<button type=submit class="btn btn-template-main"><i class="fas fa-search"></i></button>
+</span>
+</div>
+</form>
+</div>
+</div>
 <div class="panel sidebar-menu">
-    <div class="panel-heading">
-        <h3 class="panel-title">Tags</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            <li><a href="http://www.devcows.com/tags/ambilight"><i class="fa fa-tags"></i> ambilight</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/android"><i class="fa fa-tags"></i> android</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/arduino"><i class="fa fa-tags"></i> arduino</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/deluge"><i class="fa fa-tags"></i> deluge</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/google-maps"><i class="fa fa-tags"></i> google-maps</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/hdd-usb"><i class="fa fa-tags"></i> hdd-usb</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/humidity"><i class="fa fa-tags"></i> humidity</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/ipsec"><i class="fa fa-tags"></i> ipsec</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/kodi"><i class="fa fa-tags"></i> kodi</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/meteodino"><i class="fa fa-tags"></i> meteodino</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/mikrotik"><i class="fa fa-tags"></i> mikrotik</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/raspberry-pi"><i class="fa fa-tags"></i> raspberry-pi</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/temperature"><i class="fa fa-tags"></i> temperature</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/vpn"><i class="fa fa-tags"></i> vpn</a>
-            </li>
-            
-            <li><a href="http://www.devcows.com/tags/xbmc"><i class="fa fa-tags"></i> xbmc</a>
-            </li>
-            
-        </ul>
-    </div>
+<div class=panel-heading>
+<h3 class=panel-title>Tags</h3>
 </div>
-
-
-
-
-
-
-                        
-
-                    </div>
-                    
-
-                    
-
-                </div>
-                
-
-            </div>
-            
-        </div>
-        
-
-        <footer id="footer">
-    <div class="container">
-
-        
-        <div class="col-md-4 col-sm-6">
-            <h4>About us</h4>
-
-            <p>We are specialized in Ruby on Rails, Django and Android development.</p><p>If you want to obtain more information about the team, please, feel free to <a href='/contact'>contact us</a>. We would love to hear from you.</p>
-
-            <hr class="hidden-md hidden-lg hidden-sm">
-
-        </div>
-        
-        
-
-        <div class="col-md-4 col-sm-6">
-
-            <h4>Recent posts</h4>
-
-            <div class="blog-entries">
-                
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/">
-                          
-                            <img src="http://www.devcows.com/media/mikrotik_ipsec.png" class="img-responsive" alt="">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/">Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs</a></h5>
-                    </div>
-                </div>
-                
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="http://www.devcows.com/blog/arduino-ambilight-xbmc/">
-                          
-                            <img src="http://www.devcows.com/media/ambilight.jpg" class="img-responsive" alt="">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="http://www.devcows.com/blog/arduino-ambilight-xbmc/">Homemade ambilight with Arduino and Kodi</a></h5>
-                    </div>
-                </div>
-                
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="http://www.devcows.com/blog/be-in-sync-with-raspberry/">
-                          
-                            <img src="http://www.devcows.com/media/BTSync.png" class="img-responsive" alt="">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="http://www.devcows.com/blog/be-in-sync-with-raspberry/">Be sync with Raspberry Pi</a></h5>
-                    </div>
-                </div>
-                
-            </div>
-
-            <hr class="hidden-md hidden-lg">
-
-        </div>
-        
-
-        
-        <div class="col-md-4 col-sm-6">
-
-            <h4>Contact</h4>
-
-            <p><strong><u>DevCows</u></strong>
-        <br>Avda. Països Catalans, 28 B - local B
-        <br>Sant Pere i Sant Pau
-        <br>43007
-        <br>Tarragona
-        <br>
-        <strong>Spain</strong>
-      </p>
-      
-
-            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
-
-            <hr class="hidden-md hidden-lg hidden-sm">
-
-        </div>
-        
-        
-
-    </div>
-    
+<div class=panel-body>
+<ul class=tag-cloud>
+<li>
+<a href=/tags/ambilight><i class="fas fa-tags"></i> ambilight</a>
+</li>
+<li>
+<a href=/tags/android><i class="fas fa-tags"></i> android</a>
+</li>
+<li>
+<a href=/tags/arduino><i class="fas fa-tags"></i> arduino</a>
+</li>
+<li>
+<a href=/tags/deluge><i class="fas fa-tags"></i> deluge</a>
+</li>
+<li>
+<a href=/tags/google-maps><i class="fas fa-tags"></i> google-maps</a>
+</li>
+<li>
+<a href=/tags/hdd-usb><i class="fas fa-tags"></i> hdd-usb</a>
+</li>
+<li>
+<a href=/tags/humidity><i class="fas fa-tags"></i> humidity</a>
+</li>
+<li>
+<a href=/tags/ipsec><i class="fas fa-tags"></i> ipsec</a>
+</li>
+<li>
+<a href=/tags/kodi><i class="fas fa-tags"></i> kodi</a>
+</li>
+<li>
+<a href=/tags/meteodino><i class="fas fa-tags"></i> meteodino</a>
+</li>
+<li>
+<a href=/tags/mikrotik><i class="fas fa-tags"></i> mikrotik</a>
+</li>
+<li>
+<a href=/tags/raspberry-pi><i class="fas fa-tags"></i> raspberry-pi</a>
+</li>
+<li>
+<a href=/tags/temperature><i class="fas fa-tags"></i> temperature</a>
+</li>
+<li>
+<a href=/tags/vpn><i class="fas fa-tags"></i> vpn</a>
+</li>
+<li>
+<a href=/tags/xbmc><i class="fas fa-tags"></i> xbmc</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer id=footer>
+<div class=container>
+<div class="col-md-4 col-sm-6">
+<h4>About us</h4>
+<p>We are specialized in Ruby on Rails, Django and Android development.</p><p>If you want to obtain more information about the team, please, feel free to <a href=/contact>contact us</a>. We would love to hear from you.</p>
+<hr class="hidden-md hidden-lg hidden-sm">
+</div>
+<div class="col-md-4 col-sm-6">
+<h4>Recent posts</h4>
+<div class=blog-entries>
+<div class="item same-height-row clearfix">
+<div class="image same-height-always">
+<a href=http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/>
+<img src=/media/mikrotik_ipsec.png class=img-responsive alt="Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs">
+</a>
+</div>
+<div class="name same-height-always">
+<h5><a href=http://www.devcows.com/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips/>Create an IPsec tunnel between 2 Mikrotik routers and dynamic public IPs</a></h5>
+</div>
+</div>
+<div class="item same-height-row clearfix">
+<div class="image same-height-always">
+<a href=http://www.devcows.com/blog/arduino-ambilight-xbmc/>
+<img src=/media/ambilight.jpg class=img-responsive alt="Homemade ambilight with Arduino and Kodi">
+</a>
+</div>
+<div class="name same-height-always">
+<h5><a href=http://www.devcows.com/blog/arduino-ambilight-xbmc/>Homemade ambilight with Arduino and Kodi</a></h5>
+</div>
+</div>
+<div class="item same-height-row clearfix">
+<div class="image same-height-always">
+<a href=http://www.devcows.com/blog/be-in-sync-with-raspberry/>
+<img src=/media/BTSync.png class=img-responsive alt="Be sync with Raspberry Pi">
+</a>
+</div>
+<div class="name same-height-always">
+<h5><a href=http://www.devcows.com/blog/be-in-sync-with-raspberry/>Be sync with Raspberry Pi</a></h5>
+</div>
+</div>
+</div>
+<hr class="hidden-md hidden-lg">
+</div>
+<div class="col-md-4 col-sm-6">
+<h4>Contact</h4>
+<p><strong><u>DevCows</u></strong>
+<br>Avda. Països Catalans, 28 B - local B
+<br>Sant Pere i Sant Pau
+<br>43007
+<br>Tarragona
+<br>
+<strong>Spain</strong>
+</p>
+<a href=/contact class="btn btn-small btn-template-main">Go to contact page</a>
+<hr class="hidden-md hidden-lg hidden-sm">
+</div>
+</div>
 </footer>
-
-
-
-
-
-
-
-<div id="copyright">
-    <div class="container">
-        <div class="col-md-12">
-            
-            <p class="pull-left">Copyright (c) 2015 - 2016, DevCows; all rights reserved.</p>
-            
-            <p class="pull-right">
-              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
-              
-
-              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
-            </p>
-        </div>
-    </div>
+<div id=copyright>
+<div class=container>
+<div class=col-md-12>
+<p class=pull-left>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</p>
+<p class=pull-right>
+Template by <a href=https://bootstrapious.com/p/universal-business-e-commerce-template>Bootstrapious</a>.
+Ported to Hugo by <a href=https://github.com/devcows/hugo-universal-theme>DevCows</a>.
+</p>
 </div>
-
-
-
-
-
-    </div>
-    
-
-    
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-57386726-1', 'auto');
-ga('send', 'pageview');
-</script>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-<script src="http://www.devcows.com/js/jquery.cookie.js"></script>
-<script src="http://www.devcows.com/js/waypoints.min.js"></script>
-<script src="http://www.devcows.com/js/jquery.counterup.min.js"></script>
-<script src="http://www.devcows.com/js/jquery.parallax-1.1.3.js"></script>
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-<script src="http://www.devcows.com/js/gmaps.js"></script>
-<script src="http://www.devcows.com/js/gmaps.init.js"></script>
-<script src="http://www.devcows.com/js/front.js"></script>
-
-
-<script src="http://www.devcows.com/js/owl.carousel.min.js"></script>
-
-
-  </body>
+</div>
+</div>
+</div>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-57386726-1','auto'),ga('send','pageview'))</script>
+<script src=//code.jquery.com/jquery-3.1.1.min.js integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=anonymous></script>
+<script src=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js></script>
+<script src=/js/front.js></script>
+<script src=/js/owl.carousel.min.js></script>
+</body>
 </html>

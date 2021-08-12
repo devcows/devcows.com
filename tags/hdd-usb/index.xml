@@ -1,34 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>DevCows</title>
-    <link>http://www.devcows.com/tags/hdd-usb/index.xml</link>
-    <description>Recent content on DevCows</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright>
-    <atom:link href="http://www.devcows.com/tags/hdd-usb/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI</title>
-      <link>http://www.devcows.com/blog/connect-an-external-hdd-usb-to-raspberry/</link>
-      <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.devcows.com/blog/connect-an-external-hdd-usb-to-raspberry/</guid>
-      <description>&lt;p&gt;In &lt;code&gt;Raspberry Pi B&lt;/code&gt; model by default is limiting the output amperage. We can trick this behavior editing the config file:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;vi /boot/config.txt
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Add the following lines:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;safe_mode_gpio=4
-max_usb_current=1   
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Reboot the raspberry and now you can plug the HDD in the usb port.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hdd usb on DevCows</title><link>http://www.devcows.com/tags/hdd-usb/</link><description>Recent content in hdd usb on DevCows</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Copyright (c) 2015 - 2016, DevCows; all rights reserved.</copyright><lastBuildDate>Wed, 06 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://www.devcows.com/tags/hdd-usb/index.xml" rel="self" type="application/rss+xml"/><item><title>CONNECT AN EXTERNAL HDD (USB) TO RASPBERRY PI</title><link>http://www.devcows.com/blog/connect-an-external-hdd-usb-to-raspberry/</link><pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate><guid>http://www.devcows.com/blog/connect-an-external-hdd-usb-to-raspberry/</guid><description>In Raspberry Pi B model by default is limiting the output amperage. We can trick this behavior editing the config file:
+vi /boot/config.txt Add the following lines:
+safe_mode_gpio=4 max_usb_current=1 Reboot the raspberry and now you can plug the HDD in the usb port.</description></item></channel></rss>
