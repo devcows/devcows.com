@@ -5,7 +5,7 @@ date: "2014-11-29"
 tags:  
   - "android"
   - "google maps"
-author: Guillermo Guerrero
+authors: [Guillermo Guerrero]
 banner: "media/hal-cash.png"
 ---
 

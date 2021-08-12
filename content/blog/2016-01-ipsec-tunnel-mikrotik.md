@@ -6,7 +6,7 @@ tags:
   - "mikrotik"
   - "vpn"
   - "ipsec"
-author: Adrian Moreno
+authors: [Adrian Moreno]
 banner: "media/mikrotik_ipsec.png"
 aliases:
   - "/blog/create-an-ipsec-tunnel-between-2-mikrotik-routers-and-dynamic-public-ips"

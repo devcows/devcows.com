@@ -7,7 +7,7 @@ tags:
   - "arduino"
   - "xbmc"
   - "kodi"
-author: Guillermo Guerrero
+authors: [Guillermo Guerrero]
 banner: "media/ambilight.jpg"
 aliases:
   - "/blog/arduino-ambilight-kodi"

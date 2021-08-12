@@ -5,7 +5,7 @@ date: "2015-06-15"
 tags:
   - "deluge"
   - "raspberry pi"
-author: Adrian Moreno
+authors: [Adrian Moreno]
 banner: "media/raspberry-pi.png"
 aliases:
   - "/blog/update-deluge-version-on-your-raspberry-pi"

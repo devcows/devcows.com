@@ -6,7 +6,7 @@ tags:
   - "mikrotik"
   - "vpn"
   - "ipsec"
-author: Guillermo Guerrero
+authors: [Guillermo Guerrero]
 banner: "media/BTSync.png"
 aliases:
   - "/blog/be-in-sync-with-raspberry"

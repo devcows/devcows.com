@@ -5,7 +5,7 @@ date: "2016-01-06"
 tags:
   - "hdd usb"
   - "raspberry pi"
-author: Guillermo Guerrero
+authors: [Guillermo Guerrero]
 banner: "media/raspberry-pi.png"
 aliases:
   - "/blog/connect-an-external-hdd-(usb)-to-raspberry"

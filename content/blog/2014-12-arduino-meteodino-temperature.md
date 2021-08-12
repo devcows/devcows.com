@@ -7,7 +7,7 @@ tags:
   - "arduino"
   - "temperature"
   - "humidity"
-author: Guillermo Guerrero
+authors: [Guillermo Guerrero]
 banner: "media/meteodino.png"
 aliases:
   - "/blog/arduino-meteodino"

@@ -4,7 +4,7 @@ slug: "manuncios-opensource-android"
 date: "2014-11-25"
 tags:  
   - "android"
-author: Guillermo Guerrero
+authors: [Guillermo Guerrero]
 banner: "media/manuncios.jpg"
 aliases:
   - "/blog/android-manuncios-opensource"

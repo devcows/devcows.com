@@ -120,3 +120,8 @@ paginate = 10
     enable = true
     title = "From our blog"
     subtitle = ""
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
