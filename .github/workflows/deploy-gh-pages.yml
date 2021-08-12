@@ -1,0 +1,33 @@
+name: Deploy Github pages
+on:
+  push:
+    branches:
+      - master  # Set a branch to deploy
+      - deploy-gh
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        run: | 
+          mkdir themes
+          git clone --depth 1 https://github.com/devcows/hugo-universal-theme.git themes/hugo-universal-theme/
+          hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  # if not specified it defaults to ./public. source directory of the built files to make the deploy (must match the build to directory in config.toml), eg ./docs, ./public, ./exampleSite/public
+          
