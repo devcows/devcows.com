@@ -29,5 +29,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # if not specified it defaults to ./public. source directory of the built files to make the deploy (must match the build to directory in config.toml), eg ./docs, ./public, ./exampleSite/public
+          publish_dir: ./public
           
