@@ -37,6 +37,7 @@ paginate = 10
     copyright = "Copyright (c) 2015 - 2016, DevCows; all rights reserved."
     date_format = "2006-01-02"
     logo = "media/devcows-logo.png"
+    logo_small = "media/devcows-logo.png"
     address = """<p><strong><u>DevCows</u></strong>
         <br>Avda. Països Catalans, 28 B - local B
         <br>Sant Pere i Sant Pau
@@ -49,20 +50,26 @@ paginate = 10
     latitude = "41.133373"
     longitude = "1.246667"
 
-[[params.menu]]
-    name = "Home"
-    url  = "/"
-    weight = 1
 
-[[params.menu]]
-    name = "Blog"
-    url  = "/blog"
-    weight = 2
+[menu]
 
-[[params.menu]]
-    name = "Contact"
-    url  = "/contact"
-    weight = 3
+[[menu.main]]
+    name       = "Home"
+    identifier = "menu.home"
+    url        = "/"
+    weight     = 1
+
+[[menu.main]]
+    name       = "Blog"
+    identifier = "menu.blog"
+    url        = "/blog"
+    weight     = 2
+
+[[menu.main]]
+    name       = "Contact"
+    identifier = "menu.contact"
+    url        = "/contact"
+    weight     = 3
 
 [social]
     github = "devcows"
@@ -95,7 +102,7 @@ paginate = 10
 
 [params.see_more]
     enable = true
-    icon = "fa fa-file-text-o"
+    icon = "far fa-file-alt"
     title = "Do you want to know more?"
     subtitle = "Whether you have a business idea or just want to know more about our offerings, we are willing to hear from you."
     link_url = "/contact"
