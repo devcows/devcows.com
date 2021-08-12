@@ -50,20 +50,26 @@ paginate = 10
     latitude = "41.133373"
     longitude = "1.246667"
 
-[[params.menu]]
-    name = "Home"
-    url  = "/"
-    weight = 1
 
-[[params.menu]]
-    name = "Blog"
-    url  = "/blog"
-    weight = 2
+[menu]
 
-[[params.menu]]
-    name = "Contact"
-    url  = "/contact"
-    weight = 3
+[[menu.main]]
+    name       = "Home"
+    identifier = "menu.home"
+    url        = "/"
+    weight     = 1
+
+[[menu.main]]
+    name       = "Blog"
+    identifier = "menu.blog"
+    url        = "/blog"
+    weight     = 2
+
+[[menu.main]]
+    name       = "Contact"
+    identifier = "menu.contact"
+    url        = "/contact"
+    weight     = 3
 
 [social]
     github = "devcows"
